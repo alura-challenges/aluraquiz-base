@@ -2,6 +2,11 @@
 
 Seja bem vindo ao projeto base do AluraQuiz!
 
+![Capa do Projeto](/_docs/capa.png)
+
+# Onde está o Layout base?
+- [Link](https://www.figma.com/file/Veefm1pjkeTFcJC7BUqHge/Instalura)
+
 
 # Como pegar cores tema diferentes para minha app?
 
