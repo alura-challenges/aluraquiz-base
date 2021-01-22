@@ -24,6 +24,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "JulianaAmoasei",
+      "name": "Juliana Amoasei",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32266030?v=4",
+      "profile": "http://www.alura.com.br",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "projectName": "aluraquiz-base",
