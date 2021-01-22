@@ -72,7 +72,7 @@ export default function ContributorsPage({ contributors }) {
                   </h2>
                 </Widget.Header>
                 <Widget.Content style={{ padding: 0 }}>
-                  <Image indice={indice} src="https://aluraquiz-v3.omariosouto.vercel.app/" />
+                  <Image indice={indice} src={projectUrl} />
                 </Widget.Content>
               </Widget>
             ))
