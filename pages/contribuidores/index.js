@@ -28,7 +28,7 @@ https://api.screenshotmachine.com?key=${key}&url=${src}&dimension=1024x768&cache
 
   return (
     <a href={src} style={{ display: 'inline-block', fontSize: '0' }}>
-      <NextImage
+      <img
         style={{ width: '100%' }}
         width="1024"
         height="768"
