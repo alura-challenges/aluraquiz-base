@@ -25,5 +25,6 @@ Você pode dar uma olhada nesse link e separar uma palheta que combine com sua i
 - https://material-ui.com/customization/color/#playground
 
 
+
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
