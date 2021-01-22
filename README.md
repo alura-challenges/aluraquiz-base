@@ -20,3 +20,7 @@ Seja bem vindo ao projeto base do AluraQuiz!!!
 
 Você pode dar uma olhada nesse link e separar uma palheta que combine com sua imagem de background :) :
 - https://material-ui.com/customization/color/#playground
+
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors)
+<!-- ALL-CONTRIBUTORS-BADGE:END --> 
