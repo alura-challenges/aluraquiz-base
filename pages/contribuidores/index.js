@@ -1,4 +1,5 @@
-import NextImage from 'next/image'
+import fs from 'fs';
+import NextImage from 'next/image';
 import styled from 'styled-components'
 import db from '../../db.json';
 import Widget from '../../src/components/Widget'
@@ -28,7 +29,7 @@ https://api.screenshotmachine.com?key=${key}&url=${src}&dimension=1024x768&cache
 
   return (
     <a href={src} style={{ display: 'inline-block', fontSize: '0' }}>
-      <img
+      <NextImage
         style={{ width: '100%', height: '250px', objectFit: 'cover' }}
         width="1024"
         height="768"
@@ -61,7 +62,7 @@ export default function ContributorsPage({ contributors }) {
         >
           {
             contributors.map(({ user }, indice) => (
-              <Widget>
+              <Widget style={{ maxWidth: '400px' }}>
                 <Widget.Header style={{ alignItems: 'center' }}>
                   <img width="25" height="25" src={`https://github.com/${user}.png`} style={{ marginRight: '15px', borderRadius: '100%' }} />
                   <h2>
@@ -86,20 +87,16 @@ export default function ContributorsPage({ contributors }) {
 
 
 export async function getStaticProps() {
-  const contributors = [
-    {
-      user: 'omariosouto',
-      projectUrl: 'https://aluraquiz-v3.omariosouto.vercel.app/',
-    },
-    {
-      user: 'peas',
-      projectUrl: 'https://aluraquiz-v3.omariosouto.vercel.app/',
-    },
-    {
-      user: 'sergiolopes',
-      projectUrl: 'https://aluraquiz-v3.omariosouto.vercel.app/',
-    },
-  ];
+  const contributors = fs.readdirSync('./contributors').map((fileName) => {
+    const [user, projectUrl] = fs
+      .readFileSync(`./contributors/${fileName}`, { encoding: 'utf-8' })
+      .split('\n');
+
+    return {
+      user,
+      projectUrl
+    }
+  })
 
   return {
     props: {
