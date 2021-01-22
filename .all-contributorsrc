@@ -1,7 +1,5 @@
 {
-  "files": [
-    "README.md"
-  ],
+  "files": ["README.md"],
   "imageSize": 100,
   "contributorsPerLine": 7,
   "contributorsSortAlphabetically": false,
@@ -14,20 +12,6 @@
       "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
     }
   },
-  "skipCi": true,
-  "contributors": [
-    {
-      "login": "peas",
-      "name": "Paulo Silveira",
-      "avatar_url": "https://avatars.githubusercontent.com/u/71636?v=4",
-      "profile": "https://www.alura.com.br/",
-      "contributions": [
-        "code"
-      ]
-    }
-  ],
-  "projectName": "aluraquiz-base",
-  "projectOwner": "alura-challenges",
-  "repoType": "github",
-  "repoHost": "https://github.com"
+  "skipCi": "true",
+  "contributors": []
 }
