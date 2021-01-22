@@ -4,7 +4,7 @@ Seja bem vindo ao projeto base do AluraQuiz!
 
 [![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg)](https://github.com/alura-challenges/aluraquiz-base/blob/master/LICENSE)
 
-![Capa do Projeto](/_docs/capa.png)
+![Capa do Projeto](/_docs/aluraquiz-base.png)
 
 ## Como colocar o meu projeto na vitrine da imersão?
 
