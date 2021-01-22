@@ -61,7 +61,7 @@ export default function ContributorsPage({ contributors }) {
           }}
         >
           {
-            contributors.map(({ user }, indice) => (
+            contributors.map(({ user, projectUrl }, indice) => (
               <Widget style={{ maxWidth: '400px' }}>
                 <Widget.Header style={{ alignItems: 'center' }}>
                   <img width="25" height="25" src={`https://github.com/${user}.png`} style={{ marginRight: '15px', borderRadius: '100%' }} />
