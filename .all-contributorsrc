@@ -16,6 +16,15 @@
   },
   "skipCi": true,
   "contributors": [
+    {
+      "login": "omariosouto",
+      "name": "Mario Souto",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13791385?v=4",
+      "profile": "http://youtube.com/c/DevSoutinho",
+      "contributions": [
+        "code"
+      ]
+    }
   ],
   "projectName": "aluraquiz-base",
   "projectOwner": "alura-challenges",
