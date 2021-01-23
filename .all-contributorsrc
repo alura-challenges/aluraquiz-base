@@ -33,6 +33,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "lucas-hidalgo",
+      "name": "Lucas Cesar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/54157203?v=4",
+      "profile": "https://github.com/lucas-hidalgo",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "projectName": "aluraquiz-base",
