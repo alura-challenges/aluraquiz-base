@@ -43,7 +43,7 @@ Você pode dar uma olhada nesse link e separar uma palheta que combine com sua i
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 
-[![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg)](https://github.com/alura-challenges/aluraquiz-base/blob/master/LICENSE)
+[![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg?style=flat-square)](https://github.com/alura-challenges/aluraquiz-base/blob/master/LICENSE)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END --> 
