@@ -15,6 +15,7 @@ Seja bem vindo ao projeto base do AluraQuiz!!! Passos fundamentais:
 
 ## Onde está o Layout base?
 - [Link](https://www.figma.com/file/cg1MIzSRRss8ggpypQbmdD/AluraQuiz?node-id=0%3A1)
+- [Gist](https://gist.github.com/omariosouto/bd8a33d3d6e8b5da3febd7eac1c90c51)
 
 
 ## Como pegar cores tema diferentes para minha app?
