@@ -15,9 +15,18 @@ import GitHubCorner from '../src/components/GitHubCorner'
 
 export const QuizContainer = styled.div`
   width: 100%;
-  max-width: 350px;
-  padding-top: 45px;
   margin: auto 10%;
+  max-width: 350px;
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  background: linear-gradient(
+    to left bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.2)
+  );
+  backdrop-filter: blur(5px);
   @media screen and (max-width: 500px) {
     margin: auto;
     padding: 15px;
@@ -26,7 +35,7 @@ export const QuizContainer = styled.div`
 
 export default function Home() {
   return (
-    <QuizBackground backgroundImage={db.bg}>
+    <QuizBackground backgroundImage={db.bg.enigma}>
       <QuizContainer>
         <QuizLogo />
         <Widget>

@@ -1,5 +1,8 @@
 {
-  "bg": "https://i2.wp.com/css-tricks.com/wp-content/uploads/2017/06/css-is-awesome-scaled.jpg?resize=1536%2C1208&ssl=1",
+  "bg": {
+    "original": "https://i2.wp.com/css-tricks.com/wp-content/uploads/2017/06/css-is-awesome-scaled.jpg?resize=1536%2C1208&ssl=1",
+    "enigma": "https://wallpaperaccess.com/full/265236.jpg"
+  },
   "title": "Quiz CSS da Alura",
   "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
   "questions": [
@@ -30,10 +33,17 @@
     ""
   ],
   "theme": {
-    "colors": {
+    "originalColors": {
       "primary": "#0d47a1",
       "secondary": "#29b6f6",
-      "mainBg": "#171B35",
+      "mainBg": "#171B35"
+    },
+    "enigmaColors": {
+      "primary": "#1b5e20",
+      "secondary": "#81c784",
+      "mainBg": "124116"
+    },
+    "colors": {
       "contrastText": "#FFFFFF",
       "wrong": "#FF5722",
       "success": "#4CAF50"
