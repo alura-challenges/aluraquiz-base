@@ -50,6 +50,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "higorpo",
+      "name": "Higor Oliveira",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46327961?v=4",
+      "profile": "http://dailyfriend.com.br",
+      "contributions": [
+        "example"
+      ]
     }
   ],
   "projectName": "aluraquiz-base",
