@@ -7,7 +7,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "latest",
+    "next": "^10.0.5",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-is": "^16.8.0",
@@ -16,5 +16,8 @@
   "devDependencies": {
     "babel-plugin-styled-components": "^1.8.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "main": "index.js",
+  "repository": "https://github.com/marcosadriano05/aluraquiz-base.git",
+  "author": "Marcos Adriano <marcosadriano740@gmail.com>"
 }
