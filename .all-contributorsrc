@@ -50,6 +50,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "robsonamendonca",
+      "name": "Robson Antonio Lima Mendonça",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18629707?v=4",
+      "profile": "http://about.me/robsonamendonca",
+      "contributions": [
+        "example"
+      ]
     }
   ],
   "projectName": "aluraquiz-base",
