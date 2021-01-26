@@ -68,6 +68,15 @@
       "contributions": [
         "example"
       ]
+    },
+    {
+      "login": "lfrigodesouza",
+      "name": "Lucas Frigo de Souza",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19676697?v=4",
+      "profile": "http://LFrigoDeSouza.NET",
+      "contributions": [
+        "example"
+      ]
     }
   ],
   "projectName": "aluraquiz-base",
