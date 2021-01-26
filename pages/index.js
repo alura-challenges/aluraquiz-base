@@ -40,9 +40,11 @@ export default function Home() {
 
         <Widget>
           <Widget.Content>
-            <h1>Quizes da Galera</h1>
+            <h1>Quizes Matemáticos</h1>
 
-            <p>lorem ipsum dolor sit amet...</p>
+            <p>Você o motivo de o MMC ter subido a escada?</p>
+            <p>...</p>
+            <p>Para ver o MDC :P</p>
           </Widget.Content>
         </Widget>
         <Footer />
