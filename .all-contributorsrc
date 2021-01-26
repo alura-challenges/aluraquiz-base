@@ -59,6 +59,15 @@
       "contributions": [
         "example"
       ]
+    },
+    {
+      "login": "pablotdv",
+      "name": "Pablo Tôndolo de Vargas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3980593?v=4",
+      "profile": "https://pablotdv.azurewebsites.net/",
+      "contributions": [
+        "example"
+      ]
     }
   ],
   "projectName": "aluraquiz-base",
