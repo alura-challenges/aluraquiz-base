@@ -40,6 +40,7 @@ Você pode dar uma olhada nesse link e separar uma palheta que combine com sua i
   </tr>
   <tr>
     <td align="center"><a href="https://www.linkedin.com/in/antonionarcilio/"><img src="https://avatars.githubusercontent.com/u/49988118?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Antonio Narcilio</b></sub></a><br /><a href="#example-AntonioNarcilio" title="Examples">💡</a></td>
+    <td align="center"><a href="https://twitter.com/Weltonvaz"><img src="https://avatars.githubusercontent.com/u/1353071?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Welton Vaz de Souza</b></sub></a><br /><a href="#example-weltonvaz" title="Examples">💡</a></td>
   </tr>
 </table>
 
@@ -51,6 +52,6 @@ Você pode dar uma olhada nesse link e separar uma palheta que combine com sua i
 
 [![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg?style=flat-square)](https://github.com/alura-challenges/aluraquiz-base/blob/master/LICENSE)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END --> 
 
