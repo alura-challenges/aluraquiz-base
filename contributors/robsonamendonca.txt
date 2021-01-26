@@ -1,2 +1,2 @@
 robsonamendonca
-scrumquiz.robsonamendonca.vercel.app
+https://scrumquiz.robsonamendonca.vercel.app/
