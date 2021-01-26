@@ -38,6 +38,9 @@ Você pode dar uma olhada nesse link e separar uma palheta que combine com sua i
     <td align="center"><a href="https://pablotdv.azurewebsites.net/"><img src="https://avatars.githubusercontent.com/u/3980593?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Pablo Tôndolo de Vargas</b></sub></a><br /><a href="#example-pablotdv" title="Examples">💡</a></td>
     <td align="center"><a href="http://LFrigoDeSouza.NET"><img src="https://avatars.githubusercontent.com/u/19676697?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Lucas Frigo de Souza</b></sub></a><br /><a href="#example-lfrigodesouza" title="Examples">💡</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://www.linkedin.com/in/antonionarcilio/"><img src="https://avatars.githubusercontent.com/u/49988118?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Antonio Narcilio</b></sub></a><br /><a href="#example-AntonioNarcilio" title="Examples">💡</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-restore -->
@@ -48,6 +51,6 @@ Você pode dar uma olhada nesse link e separar uma palheta que combine com sua i
 
 [![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg?style=flat-square)](https://github.com/alura-challenges/aluraquiz-base/blob/master/LICENSE)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END --> 
 

@@ -77,6 +77,15 @@
       "contributions": [
         "example"
       ]
+    },
+    {
+      "login": "AntonioNarcilio",
+      "name": "Antonio Narcilio",
+      "avatar_url": "https://avatars.githubusercontent.com/u/49988118?v=4",
+      "profile": "https://www.linkedin.com/in/antonionarcilio/",
+      "contributions": [
+        "example"
+      ]
     }
   ],
   "projectName": "aluraquiz-base",
