@@ -1,28 +1,97 @@
 {
-  "bg": "https://i2.wp.com/css-tricks.com/wp-content/uploads/2017/06/css-is-awesome-scaled.jpg?resize=1536%2C1208&ssl=1",
+  "bg": "https://i.pinimg.com/originals/b7/2a/86/b72a860b33af268d3a1025b27b3030ca.jpg?resize=1536%2C1208&ssl=1",
   "title": "Quiz CSS da Alura",
-  "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+  "description": "Teste os seus conhecimentos sobre CS e vamos ver o quanto você conhece do jogo. ",
   "questions": [
     {
       "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
-      "answer": 2,
+      "title": "Quanto custa uma Ak-47 ?",
+      "description": "Arma poderosa utilizada pelos terroristas",
+      "answer": 3,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "2400",
+        "2500",
+        "2600",
+        "2700",
+        "2900"
       ]
     },
     {
       "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "title": "Quanto custa uma flash bang ?",
+      "description": "Granada utilizada para cegar inimigos",
+      "answer": 1,
+      "alternatives": [
+        "100",
+        "200",
+        "300",
+        "400",
+        "500"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+      "title": "Quanto o time terrorista ganha de bônus, caso plante a bomba ?",
+      "description": "Quantidade ganha em dinheiro pelos terroristas",
+      "answer": 3,
+      "alternatives": [
+        "200",
+        "400",
+        "600",
+        "800",
+        "1000"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+      "title": "Quanto o time contra-terrorista ganha caso tenha desativado a bomba ?",
+      "description": "Quantidade ganha em dinheiro pelos contra-terroristas",
       "answer": 0,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+        "3500",
+        "3600",
+        "3700",
+        "3800",
+        "3900"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+      "title": "Quanto o time terrorista ganha se a bomba explodir ?",
+      "description": "Quantidade ganha em dinheiro pelos terroristas",
+      "answer": 0,
+      "alternatives": [
+        "3500",
+        "3600",
+        "3700",
+        "3800",
+        "3900"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+      "title": "Quanto o valor da arma M4A1 ?",
+      "description": "Arma utilizada pelos contra-terroristas",
+      "answer": 1,
+      "alternatives": [
+        "2800",
+        "2900",
+        "3000",
+        "3100",
+        "3200"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+      "title": "Qual é o código da bomba ?",
+      "description": "Arma utilizada pelos contra-terroristas",
+      "answer": 4,
+      "alternatives": [
+        "7355678",
+        "7335608",
+        "7353608",
+        "7355668",
+        "7355608"
       ]
     }
   ],
@@ -31,8 +100,8 @@
   ],
   "theme": {
     "colors": {
-      "primary": "#0d47a1",
-      "secondary": "#29b6f6",
+      "primary": "#ae7519",
+      "secondary": "#093170",
       "mainBg": "#171B35",
       "contrastText": "#FFFFFF",
       "wrong": "#FF5722",
