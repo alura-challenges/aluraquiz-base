@@ -44,6 +44,7 @@ Você pode dar uma olhada nesse link e separar uma palheta que combine com sua i
     <td align="center"><a href="https://twitter.com/Weltonvaz"><img src="https://avatars.githubusercontent.com/u/1353071?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Welton Vaz de Souza</b></sub></a><br /><a href="#example-weltonvaz" title="Examples">💡</a></td>
     <td align="center"><a href="https://github.com/jvitormf"><img src="https://avatars.githubusercontent.com/u/4220066?v=4?s=100" width="100px;" alt=""/><br /><sub><b>João Vitor Ferreira</b></sub></a><br /><a href="#example-jvitormf" title="Examples">💡</a></td>
     <td align="center"><a href="https://github.com/AlNuN"><img src="https://avatars.githubusercontent.com/u/45295157?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Matheus Nunes</b></sub></a><br /><a href="#example-AlNuN" title="Examples">💡</a></td>
+    <td align="center"><a href="https://github.com/Wprosdocimo"><img src="https://avatars.githubusercontent.com/u/8067753?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Wilson Luiz Prosdocimo</b></sub></a><br /><a href="#example-Wprosdocimo" title="Examples">💡</a></td>
   </tr>
 </table>
 
@@ -55,6 +56,6 @@ Você pode dar uma olhada nesse link e separar uma palheta que combine com sua i
 
 [![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg?style=flat-square)](https://github.com/alura-challenges/aluraquiz-base/blob/master/LICENSE)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END --> 
 
