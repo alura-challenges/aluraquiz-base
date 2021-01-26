@@ -95,6 +95,15 @@
       "contributions": [
         "example"
       ]
+    },
+    {
+      "login": "jvitormf",
+      "name": "João Vitor Ferreira",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4220066?v=4",
+      "profile": "https://github.com/jvitormf",
+      "contributions": [
+        "example"
+      ]
     }
   ],
   "projectName": "aluraquiz-base",
