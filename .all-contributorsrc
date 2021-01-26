@@ -68,6 +68,15 @@
       "contributions": [
         "example"
       ]
+    },
+    {
+      "login": "Philipe-Siqueira",
+      "name": "Philipe Siqueira",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38333720?v=4",
+      "profile": "https://github.com/Philipe-Siqueira",
+      "contributions": [
+        "example"
+      ]
     }
   ],
   "projectName": "aluraquiz-base",
