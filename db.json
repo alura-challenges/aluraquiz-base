@@ -1,7 +1,7 @@
 {
-  "bg": "https://i2.wp.com/css-tricks.com/wp-content/uploads/2017/06/css-is-awesome-scaled.jpg?resize=1536%2C1208&ssl=1",
-  "title": "Quiz CSS da Alura",
-  "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+  "bg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZG1b1CQs-uThxVFDMyCddU9rV-MDqS2cBpQ&usqp=CAU",
+  "title": "Quiz Matemática da Alura",
+  "description": "Teste os seus conhecimentos sobre Matemática e vamos ver quantos zeros você vai superar!",
   "questions": [
     {
       "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
@@ -31,9 +31,9 @@
   ],
   "theme": {
     "colors": {
-      "primary": "#0d47a1",
-      "secondary": "#29b6f6",
-      "mainBg": "#171B35",
+      "primary": "#9e9e9e",
+      "secondary": "#616161",
+      "mainBg": "#424242",
       "contrastText": "#FFFFFF",
       "wrong": "#FF5722",
       "success": "#4CAF50"
