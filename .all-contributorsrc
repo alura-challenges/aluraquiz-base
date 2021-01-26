@@ -104,6 +104,15 @@
       "contributions": [
         "example"
       ]
+    },
+    {
+      "login": "AlNuN",
+      "name": "Matheus Nunes",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45295157?v=4",
+      "profile": "https://github.com/AlNuN",
+      "contributions": [
+        "example"
+      ]
     }
   ],
   "projectName": "aluraquiz-base",
