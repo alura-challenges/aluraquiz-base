@@ -1,6 +1,6 @@
 {
   "bg": "https://i.pinimg.com/originals/b7/2a/86/b72a860b33af268d3a1025b27b3030ca.jpg?resize=1536%2C1208&ssl=1",
-  "title": "Quiz CSS da Alura",
+  "title": "Quiz CS",
   "description": "Teste os seus conhecimentos sobre CS e vamos ver o quanto você conhece do jogo. ",
   "questions": [
     {
@@ -84,7 +84,7 @@
     {
       "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
       "title": "Qual é o código da bomba ?",
-      "description": "Arma utilizada pelos contra-terroristas",
+      "description": "Bomba levada pelos terroristas para ser plantada.",
       "answer": 4,
       "alternatives": [
         "7355678",
@@ -100,7 +100,8 @@
   ],
   "theme": {
     "colors": {
-      "primary": "#ae7519",
+      "primary": "#9E6A16",
+      "primaryHover": "#D48E1E",
       "secondary": "#093170",
       "mainBg": "#171B35",
       "contrastText": "#FFFFFF",

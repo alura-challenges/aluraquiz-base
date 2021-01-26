@@ -1,30 +1,23 @@
-import styled from 'styled-components'
+import { useCallback, useState } from 'react';
+import Router from 'next/router';
+
 import db from '../db.json';
 import Widget from '../src/components/Widget'
 import QuizLogo from '../src/components/QuizLogo'
 import QuizBackground from '../src/components/QuizBackground'
 import Footer from '../src/components/Footer'
 import GitHubCorner from '../src/components/GitHubCorner'
+import QuizContainer from '../src/components/QuizContainer'
 
-// const BackgroundImage = styled.div`
-//   background-image: url(${db.bg});
-//   flex: 1;
-//   background-size: cover;
-//   background-position: center;
-// `;
-
-export const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
-  padding-top: 45px;
-  margin: auto 10%;
-  @media screen and (max-width: 500px) {
-    margin: auto;
-    padding: 15px;
-  }
-`;
 
 export default function Home() {
+  const [ userName, setUserName ] = useState('');
+  
+  const handleSubmit = useCallback((e) => {
+    e.preventDefault();
+    Router.push(`/quiz?userName=${userName}`)
+  },[userName])
+
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
@@ -40,9 +33,13 @@ export default function Home() {
 
         <Widget>
           <Widget.Content>
-            <h1>Quizes da Galera</h1>
-
-            <p>lorem ipsum dolor sit amet...</p>
+            <h2>Qual é o seu nome ?</h2>
+            <form onSubmit={handleSubmit}>
+              <input type="text" placeholder="Digite seu nome." value={userName} onChange={ event => setUserName(event.target.value)}/>
+              <Widget.Content.Button type='submit' disabled={!!!userName}>
+                {`Jogar como ${userName || '(seu nome)'}`}
+              </Widget.Content.Button>
+            </form>
           </Widget.Content>
         </Widget>
         <Footer />

@@ -29,6 +29,11 @@ Widget.Header = styled.header`
   align-items: center;
   padding: 18px 32px;
   background-color: ${({ theme }) => theme.colors.primary};
+
+
+  span{
+      font-size: 14px;
+    }
   
   * {
     margin: 0;
@@ -47,6 +52,42 @@ Widget.Content = styled.div`
     list-style: none;
     padding: 0;
   }
+
+  h2{
+    margin-bottom: 10px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      border: 0;
+      padding: 3px;
+      border-radius: ${({ theme }) => theme.borderRadius};
+    }
+   
+  }
+`;
+
+Widget.Content.Button = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px;
+  margin-top: 5px;
+  border: 0;
+  opacity: ${( props ) => props.disabled ? 0.5 : 1 };
+  border-radius: ${({ theme }) => theme.borderRadius};
+  color: ${({ theme }) => theme.colors.contrastText};
+  background-color: ${({ theme }) => theme.colors.primary};
+
+  &:hover{
+    background-color: ${({ theme }) => theme.colors.primaryHover};
+  }
+
+  cursor: pointer;
 `;
 
 export default Widget;
