@@ -15,9 +15,11 @@ import GitHubCorner from '../src/components/GitHubCorner'
 
 export const QuizContainer = styled.div`
   width: 100%;
-  margin: auto 10%;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
   max-width: 350px;
-  margin-top: 25px;
   padding: 20px;
   border-radius: 5px;
   background-color: #fff;
@@ -28,8 +30,16 @@ export const QuizContainer = styled.div`
   );
   backdrop-filter: blur(5px);
   @media screen and (max-width: 500px) {
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 15px;
+    top: 55vh;
+    left: 0;
+    background: linear-gradient(
+    to right top,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.2)
+  );
   }
 `;
 
