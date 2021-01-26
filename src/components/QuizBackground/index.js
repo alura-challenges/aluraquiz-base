@@ -8,6 +8,7 @@ const QuizBackground = styled.div`
   background-image: url(${({ backgroundImage }) => backgroundImage});
   background-color: ${({ theme }) => theme.colors.mainBg};
   flex: 1;
+  
   @media screen and (max-width: 500px) {
     background-image: none;
     &:after {
@@ -32,5 +33,8 @@ const QuizBackground = styled.div`
     }
   }
 `;
+
+
+
 
 export default QuizBackground;
