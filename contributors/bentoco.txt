@@ -1,0 +1,2 @@
+bentoco
+tibiaquiz.bentoco.vercel.app

@@ -1,26 +1,26 @@
 {
-  "name": "aluraquiz-base",
-  "version": "1.0.1",
-  "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "latest",
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0",
-    "react-is": "^16.8.0",
-    "styled-components": "^5.0.0"
-  },
-  "devDependencies": {
-    "babel-plugin-styled-components": "^1.8.0",
-    "eslint": "^7.18.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.22.0",
-    "eslint-plugin-react-hooks": "^4.2.0"
-  },
-  "license": "MIT"
+    "name": "tibia-quizz",
+    "version": "1.0.1",
+    "scripts": {
+        "dev": "next",
+        "build": "next build",
+        "start": "next start"
+    },
+    "dependencies": {
+        "next": "latest",
+        "react": "^16.8.0",
+        "react-dom": "^16.8.0",
+        "react-is": "^16.8.0",
+        "styled-components": "^5.0.0"
+    },
+    "devDependencies": {
+        "babel-plugin-styled-components": "^1.8.0",
+        "eslint": "^7.18.0",
+        "eslint-config-airbnb": "^18.2.1",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-jsx-a11y": "^6.4.1",
+        "eslint-plugin-react": "^7.22.0",
+        "eslint-plugin-react-hooks": "^4.2.0"
+    },
+    "license": "MIT"
 }
