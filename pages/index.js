@@ -1,10 +1,15 @@
-import styled from 'styled-components'
+import React, { useState } from 'react';
+import { useRouter } from 'next/router';
+// database
 import db from '../db.json';
-import Widget from '../src/components/Widget'
-import QuizLogo from '../src/components/QuizLogo'
-import QuizBackground from '../src/components/QuizBackground'
-import Footer from '../src/components/Footer'
-import GitHubCorner from '../src/components/GitHubCorner'
+// components
+import Widget from '../src/components/Widget';
+import QuizLogo from '../src/components/QuizLogo';
+import QuizBackground from '../src/components/QuizBackground';
+import Footer from '../src/components/Footer';
+import GitHubCorner from '../src/components/GitHubCorner';
+import QuizContainer from '../src/components/QuizContainer';
+import Form from '../src/components/Form';
 
 // const BackgroundImage = styled.div`
 //   background-image: url(${db.bg});
@@ -13,47 +18,46 @@ import GitHubCorner from '../src/components/GitHubCorner'
 //   background-position: center;
 // `;
 
-export const QuizContainer = styled.div`
-  width: 100%;
-  position: absolute;
-  left: 10%;
-  top: 50%;
-  transform: translateY(-50%);
-  max-width: 350px;
-  padding: 20px;
-  border-radius: 5px;
-  background-color: #fff;
-  background: linear-gradient(
-    to left bottom,
-    rgba(255, 255, 255, 0),
-    rgba(255, 255, 255, 0.2)
-  );
-  backdrop-filter: blur(5px);
-  @media screen and (max-width: 500px) {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px;
-    top: 55vh;
-    left: 0;
-    background: linear-gradient(
-    to right top,
-    rgba(255, 255, 255, 0),
-    rgba(255, 255, 255, 0.2)
-  );
-  }
-`;
-
 export default function Home() {
+  const [name, setName] = useState('');
+  console.log('name: ', name, 'setName:', setName);
+  
+  const router = useRouter();
+
+  const handleSubmit = () => {
+    router.push(`/quiz?name=${name}`);
+  };
+
   return (
     <QuizBackground backgroundImage={db.bg.enigma}>
       <QuizContainer>
         <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>{db.title}</h1>
+            <h1>{db.title.enigma}</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>{db.description}</p>
+            <p>{db.description.enigma}</p>
+
+            <Form onSubmit={(e) => {
+              e.preventDefault();
+              console.log('Form submited from home page!');
+              handleSubmit();
+            }}>
+              <input
+                type="text"
+                placeholder="Quem vai jogar?"
+                onChange={(e) => {setName(e.target.value)}}
+              />
+
+              <button
+                type="submit"
+                // validating button
+                disabled={name.length === 0}
+              >
+                Jogar
+              </button>
+            </Form>
           </Widget.Content>
         </Widget>
 

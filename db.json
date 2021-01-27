@@ -3,8 +3,14 @@
     "original": "https://i2.wp.com/css-tricks.com/wp-content/uploads/2017/06/css-is-awesome-scaled.jpg?resize=1536%2C1208&ssl=1",
     "enigma": "https://wallpaperaccess.com/full/265236.jpg"
   },
-  "title": "Quiz CSS da Alura",
-  "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+  "title": {
+    "alura": "Quiz CSS da Alura",
+    "enigma": "Enigma Quiz"
+  },
+  "description": {
+    "alura": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "enigma": "Será que você sabe a resposta para os enigmas???"
+  },  
   "questions": [
     {
       "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
