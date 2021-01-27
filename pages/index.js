@@ -1,3 +1,5 @@
+import { useState } from 'react'
+import { useRouter } from 'next/router'
 import styled from 'styled-components'
 
 import db from '../db.json';
@@ -28,6 +30,9 @@ export const QuizContainer = styled.div`
 `;
 
 export default function Home() {
+  const [name, setName] = useState('')
+  const router = useRouter()
+
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
@@ -38,9 +43,19 @@ export default function Home() {
           </Widget.Header>
           <Widget.Content>
             <p>{db.description}</p>
-            <form>
-              <Input name="nomeDoJogador" type="text" />
-              <Button type="submit">Jogar</Button>
+            <form onSubmit={(user) => {
+                user.preventDefault()
+                router.push(`/quiz?name=${name}`)
+              }}
+            >
+              <Input
+                name="nomeDoJogador"
+                type="text"
+                onChange={(user) => setName(user.target.value)}
+                placeholder="Digite seu nome"
+                value={name}
+              />
+              <Button type="submit" disabled={name.length === 0}>Jogar</Button>
             </form>
           </Widget.Content>
         </Widget>
