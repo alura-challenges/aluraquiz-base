@@ -1,7 +1,7 @@
 {
-  "bg": "https://i2.wp.com/css-tricks.com/wp-content/uploads/2017/06/css-is-awesome-scaled.jpg?resize=1536%2C1208&ssl=1",
-  "title": "Quiz CSS da Alura",
-  "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+  "bg": "https://wallsdesk.com/wp-content/uploads/2017/01/Madonna-Wallpaper-.jpg",
+  "title": "Quiz de música pop",
+  "description": "Teste os seus conhecimentos sobre música pop",
   "questions": [
     {
       "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
@@ -31,9 +31,9 @@
   ],
   "theme": {
     "colors": {
-      "primary": "#0d47a1",
-      "secondary": "#29b6f6",
-      "mainBg": "#171B35",
+      "primary": "#f06292",
+      "secondary": "#f381a7",
+      "mainBg": "#3D3E40",
       "contrastText": "#FFFFFF",
       "wrong": "#FF5722",
       "success": "#4CAF50"
