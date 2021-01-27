@@ -46,6 +46,8 @@ Você pode dar uma olhada nesse link e separar uma palheta que combine com sua i
     <td align="center"><a href="https://github.com/AlNuN"><img src="https://avatars.githubusercontent.com/u/45295157?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Matheus Nunes</b></sub></a><br /><a href="#example-AlNuN" title="Examples">💡</a></td>
     <td align="center"><a href="https://github.com/Wprosdocimo"><img src="https://avatars.githubusercontent.com/u/8067753?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Wilson Luiz Prosdocimo</b></sub></a><br /><a href="#example-Wprosdocimo" title="Examples">💡</a></td>
     <td align="center"><a href="https://github.com/esterfania"><img src="https://avatars.githubusercontent.com/u/35200622?s=400&u=399aa7c69c0ca71dcfc661e9c044ed092d04bda5&v=4" width="100px;" alt=""/><br /><sub><b>Esterfania</b></sub></a><br /><a href="https://github.com/alura-challenges/aluraquiz-base/commits?author=esterfania" title="Code">💻</a></td>
+  </tr>
+  <tr>
     <td align="center"><a href="https://github.com/kibolho"><img src="https://avatars.githubusercontent.com/u/1197923?s=400&u=33ba0606c52f2080be87a6bdbc8ddee75a46e039&v=4" width="100px;" alt=""/><br /><sub><b>Abílio Azevedo</b></sub></a><br /><a href="https://github.com/alura-challenges/aluraquiz-base/commits?author=kibolho" title="Code">💻</a></td>
   </tr>
 </table>
