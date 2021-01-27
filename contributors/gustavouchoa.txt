@@ -1,2 +1,0 @@
-gustavouchoa
-https://dotnetquiz.gustavouchoa.vercel.app/

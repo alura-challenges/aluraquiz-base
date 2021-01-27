@@ -1,2 +1,0 @@
-paulohsz
-https://imersao-react-nextjs-learn-quiz.paulohsz.vercel.app/

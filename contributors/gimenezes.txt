@@ -1,2 +1,0 @@
-gsmenezes
-https://imersao-alura-viking-quiz.gsmenezes.vercel.app/

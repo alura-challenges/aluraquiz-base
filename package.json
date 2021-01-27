@@ -1,12 +1,10 @@
 {
-  "name": "aluraquiz-base",
-  "version": "1.0.1",
+  "name": "with-styled-components",
+  "version": "1.0.0",
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
-    "eslint:init": "eslint --init",
-    "lint": "eslint ./ --fix"
+    "start": "next start"
   },
   "dependencies": {
     "next": "latest",
@@ -16,13 +14,7 @@
     "styled-components": "^5.0.0"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.8.0",
-    "eslint": "^7.16.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-react-hooks": "^4.2.0"
+    "babel-plugin-styled-components": "^1.8.0"
   },
   "license": "MIT"
 }
