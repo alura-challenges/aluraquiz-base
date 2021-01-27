@@ -1,7 +1,7 @@
 import React from 'react';
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import Head from 'next/head';
-import db from '../db.json';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import db from '../db.json'
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -20,6 +20,13 @@ const GlobalStyle = createGlobalStyle`
   html, body {
     min-height: 100vh;
   }
+
+  form,
+  form label{
+    display:flex;
+    flex-direction: column;
+  }
+
   #__next {
     flex: 1;
     display: flex;
@@ -27,21 +34,23 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const { theme } = db;
+const theme = db.theme;
 
-// eslint-disable-next-line react/prop-types
 export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <title>{db.title}</title>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet" />
+        <meta property="og:title" content="Imersão React2 - Alura Quiz - Ewerton Augusto" key="title" />
+        <meta property="og:description" content="Imersão React2 da Alura, utlizando Next.JS com Styled Components para criação de um Quiz sobre inclusão na tecnologia e deploy na Vercel." />
+        <meta property="og:image" content={db.bg} />
       </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        {/* eslint-disable-next-line react/jsx-props-no-spreading */}
         <Component {...pageProps} />
       </ThemeProvider>
     </>
-  );
+  )
 }
