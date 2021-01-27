@@ -38,9 +38,10 @@ export default function Home() {
           </Widget.Header>
           <Widget.Content>
             <p>{db.description}</p>
-
-            <Input name="nomeDoJogador" type="text" />
-            <Button>Jogar</Button>
+            <form>
+              <Input name="nomeDoJogador" type="text" />
+              <Button type="submit">Jogar</Button>
+            </form>
           </Widget.Content>
         </Widget>
 
