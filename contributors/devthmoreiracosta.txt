@@ -1,2 +1,2 @@
 thmoreiracosta
-https://aluraquiz-css.thmoreiracosta.vercel.app/
+https://aluraquiz.thmoreiracosta.vercel.app/
