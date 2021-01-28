@@ -7,15 +7,9 @@ import db from '../db.json';
 import Widget from '../src/components/Widget';
 import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
+import Start from '../src/components/Start';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
-
-// const BackgroundImage = styled.div`
-//   background-image: url(${db.bg});
-//   flex: 1;
-//   background-size: cover;
-//   background-position: center;
-// `;
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -41,29 +35,30 @@ export default function Home() {
         <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>The legend of zelda</h1>
+            <h1>The PEANUTS Quiz!!!!</h1>
           </Widget.Header>
           <Widget.Content>
-            <form onSubmit={function (infosDoEvento) {
-              infosDoEvento.preventDefault();
-              router.push(`/quiz?name=${name}`);
-              console.log('Fazendo uma submissão por meio do react');
-            }}
-            >
-              <input
-                onChange={function (infosDoEvento) {
-                  console.log(infosDoEvento.target.value);
-                  // State
-                  // name = infosDoEvento.target.value;
-                  setName(infosDoEvento.target.value);
-                }}
-                placeholder="Diz ai seu nome"
-              />
-              <button type="submit" disabled={name.length === 0}>
-                Jogar
-                {name}
-              </button>
-            </form>
+            <Start>
+              <form onSubmit={function (infosDoEvento) {
+                infosDoEvento.preventDefault();
+                router.push(`/quiz?name=${name}`);
+                console.log('Fazendo uma submissão por meio do react');
+              }}
+              >
+                <input
+                  onChange={function (infosDoEvento) {
+                    console.log(infosDoEvento.target.value);
+                    // State
+                    // name = infosDoEvento.target.value;
+                    setName(infosDoEvento.target.value);
+                  }}
+                  placeholder="Diz ai seu nome"
+                />
+                <button type="submit" disabled={name.length === 0}>
+                  Start Quiz
+                </button>
+              </form>
+            </Start>
           </Widget.Content>
         </Widget>
 
@@ -74,7 +69,9 @@ export default function Home() {
             <p>lorem ipsum dolor sit amet...</p>
           </Widget.Content>
         </Widget>
+
         <Footer />
+
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/omariosouto" />
     </QuizBackground>
