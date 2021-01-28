@@ -1,2 +1,2 @@
 ReneSena
-quiz-cavaleiro-zodiaco.vercel.app
+https://quiz-cavaleiro-zodiaco.vercel.app
