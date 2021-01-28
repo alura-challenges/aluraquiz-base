@@ -1,2 +1,2 @@
 Garubieru
-https://flow-quiz-9cf3nbv63.vercel.app/
+https://flow-quiz.garubieru.vercel.app/
