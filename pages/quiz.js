@@ -4,7 +4,6 @@ import db from "../db.json";
 import QuizBackground from "../src/components/QuizBackground";
 import QuizContainer from "../src/components/QuizContainer";
 import Widget from "../src/components/Widget";
-import Input from "../src/components/Input";
 import Button from "../src/components/Button";
 
 function LoadingWidget() {
@@ -13,6 +12,16 @@ function LoadingWidget() {
       <Widget.Header>Carregando...</Widget.Header>
 
       <Widget.Content>[Desafio do Loading]</Widget.Content>
+    </Widget>
+  );
+}
+
+function ResultWidget() {
+  return (
+    <Widget>
+      <Widget.Header>Você acertou X perguntas</Widget.Header>
+
+      <Widget.Content>#1 pregunta: Acertou</Widget.Content>
     </Widget>
   );
 }
@@ -48,7 +57,7 @@ function QuestionWidget(props) {
             const alternativeId = `alternativ__${alternativeIndex}`;
             return (
               <Widget.Topic as="label" htmlFor={alternativeId}>
-                <Input type="radio" id={alternativeId} name={questionId} />
+                <input type="radio" id={alternativeId} name={questionId} />
                 {alternative}
               </Widget.Topic>
             );
@@ -101,7 +110,7 @@ export default function QuizPage() {
             onSubmit={handleSubmitQuiz}
           />
         )}
-        {screenState === "RESULTADO" && <div>Tela de resultado</div>}
+        {screenState === "RESULT" && <ResultWidget />}
       </QuizContainer>
     </QuizBackground>
   );
