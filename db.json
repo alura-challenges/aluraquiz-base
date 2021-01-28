@@ -1,24 +1,102 @@
 {
     "bg": "https://i.imgur.com/omi25W8.jpg",
     "title": "Tibia Quizz",
-    "description": "Um questionário para testar sua experiência como guerreiro Tibiano...",
+    "description": "Um questionário para testar sua experiência como guerreiro Tibiano",
     "questions": [
         {
-            "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+            "image": "https://www.tibiawiki.com.br/images/d/d0/Cipfried.gif",
             "title": "Qual nível você deve estar para deixar Rookgaard?",
             "description": "Essa é pra aquecer",
-            "answer": 2,
-            "alternatives": [".elemento", "*elemento", "#elemento", "%elemento"]
+            "answer": 3,
+            "alternatives": ["13", "7", "10", "8"]
         },
         {
-            "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+            "image": "https://www.tibiawiki.com.br/images/c/ce/Orshabaal.gif",
             "title": "Qual cidade o boss Orshabaal nasce sempre que a invasão acontece?",
             "description": "Essa tá fácil vai... haha",
+            "answer": 2,
+            "alternatives": ["Carlin", "Roshamuul", "Edron", "Ab'Dendriel"]
+        },
+        {
+            "image": "https://www.tibiawiki.com.br/images/a/a9/The_Demon_Oak.gif",
+            "title": "É necessário matar quantos Demons para realizar a The Demon Oak Quest ",
+            "description": "Não vale olhar no wiki!!!",
+            "answer": 2,
+            "alternatives": ["666", "1239", "6666", "999"]
+        },
+        {
+            "image": "https://www.tibiawiki.com.br/images/f/fd/Magic_Sword.gif",
+            "title": "Quais criaturas enfrentamos dentro da The Annihilator Quest?",
+            "description": "Hmm... tá começando a esquentar...",
+            "answer": 3,
+            "alternatives": [
+                "Demons e Dark Magicians",
+                "Angry Demons e Demons",
+                "Demons Skeleton e Hunters",
+                "Angry Demons e Fire Elementals"
+            ]
+        },
+        {
+            "image": "https://www.tibiawiki.com.br/images/9/9d/Minotaur_Archer.gif",
+            "title": "Qual magia devemos utilizar para invocar a criatura Minotaur Archer",
+            "description": "Tá olhando wiki não, né?",
             "answer": 0,
             "alternatives": [
-                "background: linear-gradient(#e66465, #9198e5);",
-                "background: gradient(#e66465, #9198e5);"
+                "utevo res Minotaur Archer",
+                "exura sio Minotaur Archer",
+                "utevo res ina Minotaur Archer",
+                "exevo vita vis Minotaur Archer"
             ]
+        },
+        {
+            "image": "https://www.tibiawiki.com.br/images/2/2d/Pair_of_Soft_Boots.gif",
+            "title": "Onde podemos adquirir um par de Soft Boots?",
+            "description": "A clássica!",
+            "answer": 1,
+            "alternatives": [
+                "The Annihilator Quest",
+                "The Pits of Inferno Quest",
+                "The Demon Oak",
+                "The Inquisition Quest"
+            ]
+        },
+        {
+            "image": "https://www.tibiawiki.com.br/images/c/ce/The_Epic_Wisdom.gif",
+            "title": "Qual item raro devemos entregar para o NPC e completarmos Mage Outfit full?",
+            "description": "Pensa num itemzinho caro...",
+            "answer": 2,
+            "alternatives": [
+                "Hat of the Mad",
+                "Mage's Cap",
+                "Ferumbras Hat",
+                "Golden Helmet"
+            ]
+        },
+        {
+            "image": "https://www.tibiawiki.com.br/images/a/af/Four-Leaf_Clover.gif",
+            "title": "Qual montaria podemos adquirir com o item Four-Leaf Clover? ",
+            "description": "Só quem sabe, sabe ",
+            "answer": 3,
+            "alternatives": [
+                "Crystal Wolf",
+                "Dromedary",
+                "Midnight Panther",
+                "Lady Bug"
+            ]
+        },
+        {
+            "image": "https://www.tibiawiki.com.br/images/7/7d/Icone6.png",
+            "title": "Em qual ilha tibiana iniciamos o jogo? ",
+            "description": "Juro que ainda tá fácil",
+            "answer": 0,
+            "alternatives": ["Downport", "Rookgaard", "Carlin", "Thais"]
+        },
+        {
+            "image": "https://www.tibiawiki.com.br/images/a/ac/Cip_post_icon.gif",
+            "title": "Em que ano foi criado o Tibia? ",
+            "description": "",
+            "answer": 3,
+            "alternatives": ["1992", "1998", "1994", "1997"]
         }
     ],
     "external": [""],
