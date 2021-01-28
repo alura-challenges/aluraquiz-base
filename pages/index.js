@@ -68,14 +68,18 @@ export default function Home() {
 
         <Widget>
           <Widget.Content>
-            <h1>Quizes da Galera</h1>
-
-            <p>lorem ipsum dolor sit amet...</p>
+            <h2>Qual é o seu nome ?</h2>
+            <form onSubmit={handleSubmit}>
+              <input type="text" placeholder="Digite seu nome." value={userName} onChange={ event => setUserName(event.target.value)}/>
+              <Widget.Content.Button type='submit' disabled={!!!userName}>
+                {`Jogar como ${userName || '(seu nome)'}`}
+              </Widget.Content.Button>
+            </form>
           </Widget.Content>
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/omariosouto" />
+      <GitHubCorner projectUrl="https://github.com/gabrielpdev" />
     </QuizBackground>
   );
 }
