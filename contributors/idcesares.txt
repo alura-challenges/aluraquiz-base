@@ -1,2 +1,2 @@
 idcesares
-ai-quiz.idcesares.vercel.app
+https://ai-quiz.idcesares.vercel.app
