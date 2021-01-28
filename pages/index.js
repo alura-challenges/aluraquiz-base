@@ -1,18 +1,12 @@
 import styled from 'styled-components'
-import db from '../db.json';
+import { useRouter } from 'next/router'
+import db from '../db.json'
 import Widget from '../src/components/Widget'
 import QuizLogo from '../src/components/QuizLogo'
 import QuizBackground from '../src/components/QuizBackground'
 import Footer from '../src/components/Footer'
 import Head from '../src/components/Head'
 import GitHubCorner from '../src/components/GitHubCorner'
-
-// const BackgroundImage = styled.div`
-//   background-image: url(${db.bg});
-//   flex: 1;
-//   background-size: cover;
-//   background-position: center;
-// `;
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -26,6 +20,9 @@ export const QuizContainer = styled.div`
 `;
 
 export default function Home() {
+  const router = useRouter()
+  const [name, setName] = React.useState("")
+
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head />
@@ -37,14 +34,21 @@ export default function Home() {
           </Widget.Header>
           <Widget.Content>
             <p>{db.description}</p>
-          </Widget.Content>
-        </Widget>
-
-        <Widget>
-          <Widget.Content>
-            <h1>Quizes da Galera</h1>
-
-            <p>lorem ipsum dolor sit amet...</p>
+            <form
+              onSubmit={
+                function (e) {
+                  e.preventDefault();
+                  console.log("Botão")
+                  router.push(`/quiz/?name=${name}`)
+                }
+              }>
+              <input
+                onChange={function (e) { setName(e.target.value) }}
+                placeholder="Digite seu nome" />
+              <button disabled={name > 0}>
+                {name} vamos Jogar
+              </button>
+            </form>
           </Widget.Content>
         </Widget>
         <Footer />
