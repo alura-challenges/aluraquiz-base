@@ -17,14 +17,9 @@ const GlobalStyle = createGlobalStyle`
     // Deixa branco no começo
     color: ${({ theme }) => theme.colors.contrastText};
   }
+  
   html, body {
     min-height: 100vh;
-  }
-
-  form,
-  form label{
-    display:flex;
-    flex-direction: column;
   }
 
   #__next {
