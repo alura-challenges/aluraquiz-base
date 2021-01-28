@@ -1,52 +1,89 @@
-import { useCallback, useState } from 'react';
-import { useRouter } from 'next/router'
-
+import { useState, useEffect } from 'react';
 import db from '../../db.json';
-import Widget from '../../src/components/Widget'
 import QuizLogo from '../../src/components/QuizLogo'
 import QuizBackground from '../../src/components/QuizBackground'
 import Footer from '../../src/components/Footer'
 import GitHubCorner from '../../src/components/GitHubCorner'
 import QuizContainer from '../../src/components/QuizContainer'
 
+import QuestionWidget from '../../src/components/QuestionWidget'
+import LoadingWidget from '../../src/components/LoadingWidget'
+import ResultWidget from '../../src/components/ResultWidget'
+
+import plant from '../../src/effects/plant.mp3';
 
 export default function Quiz() {
-  const router = useRouter();
+  const stateScreen = {
+    LOADING: 'LOADING',
+    QUIZ: 'QUIZ',
+    RESULT: 'RESULT'
+  }
 
-  const handleSubmit = useCallback((e) => {
-    e.preventDefault();
-  },[])
+  const [ screenState, setScreenState ] = useState(stateScreen.LOADING);
+  
+  const [ questionIndex, setQuestionIndex ] = useState(0);
+  const questionTotal = db.questions.length;
+  const question = db.questions[questionIndex];
+  const [ audio, setAudio ] = useState(new Audio(plant));
+
+  useEffect(() => {
+    setTimeout(() => {
+      setScreenState(stateScreen.QUIZ)
+    }, 1 * 1000);
+    
+    if(questionIndex === (questionTotal - 1) ){
+      setScreenState(stateScreen.RESULT)
+    };
+
+    if(audio){
+      audio.src = plant;
+      audio.volume = 0.1;
+      audio.play();
+    }
+
+  }, [questionIndex])
+
+  function stateScreenComponent(data){
+    switch(data){
+      case 'LOADING': {
+        return(
+          <LoadingWidget />
+        )
+      }
+      case 'QUIZ': {
+        function handleSubmit(e){
+          e.preventDefault();
+          setQuestionIndex(questionIndex + 1)
+          // setScreenState(stateScreen.LOADING)
+        }
+        return(
+          <QuestionWidget 
+            question={question} 
+            questionIndex={questionIndex} 
+            questionTotal={questionTotal}
+            handleSubmit={handleSubmit}
+          />
+        )
+      }
+      case 'RESULT': {
+        return(
+          <ResultWidget />
+        )
+      }
+      default: {
+        return (
+          <h2>Erro no carregamento</h2>
+        )
+      }
+    }
+  }
 
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
         <QuizLogo />
-        <Widget>
-          <Widget.Header>
-            <h1>
-              {db.title} 
-              {` - Jogador: `}
-              <span>{router.query.userName}</span>
-              </h1>
-          </Widget.Header>
 
-          {db.questions.map( (question, index) => (
-            <Widget.Content>
-              <h2>{`${index+1}) ${question.title}`}</h2>
-
-              <p>{question.description}</p>
-              
-              <form onSubmit={handleSubmit}>
-                {question.alternatives.map ( alternative => (
-                  <Widget.Content.Button type='submit' >
-                    {alternative}
-                  </Widget.Content.Button>
-                ))}
-              </form>
-            </Widget.Content>
-          ))}
-
-        </Widget>
+        {stateScreenComponent(screenState)}
 
         <Footer />
       </QuizContainer>

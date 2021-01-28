@@ -19,5 +19,10 @@
         "react"
     ],
     "rules": {
+      "react/jsx-props-no-spreading": [ true, {
+        "html": "ignore",
+        "custom": "ignore",
+        "explicitSpread": "ignore"
+    }]
     }
 }

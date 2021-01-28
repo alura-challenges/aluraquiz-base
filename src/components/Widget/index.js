@@ -90,4 +90,29 @@ Widget.Content.Button = styled.button`
   cursor: pointer;
 `;
 
+Widget.Topic = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px;
+  margin-top: 5px;
+  
+  opacity: ${( props ) => props.disabled ? 0.5 : 1 };
+  border-radius: ${({ theme }) => theme.borderRadius};
+  color: ${({ theme }) => theme.colors.contrastText};
+  background-color: ${(props ) => props.checked ? props.theme.colors.primaryHover : props.theme.colors.primary};
+
+  &:hover{
+    background-color: ${({ theme }) => theme.colors.primaryHover};
+  }
+
+  input{
+    border: 1px solid ${(props ) => props.checked ? props.theme.colors.primaryHover : props.theme.colors.primary};
+    /* display: none; */
+  }
+
+  cursor: pointer;
+`;
+
 export default Widget;

@@ -1,22 +1,21 @@
-import { useCallback, useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import Router from 'next/router';
 
 import db from '../db.json';
-import Widget from '../src/components/Widget'
-import QuizLogo from '../src/components/QuizLogo'
-import QuizBackground from '../src/components/QuizBackground'
-import Footer from '../src/components/Footer'
-import GitHubCorner from '../src/components/GitHubCorner'
-import QuizContainer from '../src/components/QuizContainer'
-
+import Widget from '../src/components/Widget';
+import QuizLogo from '../src/components/QuizLogo';
+import QuizBackground from '../src/components/QuizBackground';
+import Footer from '../src/components/Footer';
+import GitHubCorner from '../src/components/GitHubCorner';
+import QuizContainer from '../src/components/QuizContainer';
 
 export default function Home() {
-  const [ userName, setUserName ] = useState('');
-  
+  const [userName, setUserName] = useState('');
+
   const handleSubmit = useCallback((e) => {
     e.preventDefault();
-    Router.push(`/quiz?userName=${userName}`)
-  },[userName])
+    Router.push(`/quiz?userName=${userName}`);
+  }, [userName]);
 
   return (
     <QuizBackground backgroundImage={db.bg}>
@@ -35,8 +34,8 @@ export default function Home() {
           <Widget.Content>
             <h2>Qual é o seu nome ?</h2>
             <form onSubmit={handleSubmit}>
-              <input type="text" placeholder="Digite seu nome." value={userName} onChange={ event => setUserName(event.target.value)}/>
-              <Widget.Content.Button type='submit' disabled={!!!userName}>
+              <input type="text" placeholder="Digite seu nome." value={userName} onChange={(event) => setUserName(event.target.value)} />
+              <Widget.Content.Button type="submit" disabled={!userName}>
                 {`Jogar como ${userName || '(seu nome)'}`}
               </Widget.Content.Button>
             </form>
