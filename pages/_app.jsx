@@ -36,7 +36,7 @@ export default function App({ Component, pageProps }) {
         <Head>
           <title>CS Quiz</title>
         </Head>
-        <Component {...pageProps} />
+        <Component {...pageProps}  />
       </ThemeProvider>
     </>
   );

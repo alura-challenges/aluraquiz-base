@@ -76,12 +76,14 @@ Widget.Content.Button = styled.button`
   justify-content: center;
 
   padding: 10px;
-  margin-top: 5px;
+  margin-top: 15px;
   border: 0;
   opacity: ${( props ) => props.disabled ? 0.5 : 1 };
   border-radius: ${({ theme }) => theme.borderRadius};
   color: ${({ theme }) => theme.colors.contrastText};
   background-color: ${({ theme }) => theme.colors.primary};
+
+  font-weight: bold;
 
   &:hover{
     background-color: ${({ theme }) => theme.colors.primaryHover};
@@ -101,15 +103,15 @@ Widget.Topic = styled.a`
   opacity: ${( props ) => props.disabled ? 0.5 : 1 };
   border-radius: ${({ theme }) => theme.borderRadius};
   color: ${({ theme }) => theme.colors.contrastText};
-  background-color: ${(props ) => props.checked ? props.theme.colors.primaryHover : props.theme.colors.primary};
+  background-color: ${(props ) => props.selected ? props.theme.colors.primaryHover : props.theme.colors.primary};
+  border: 2px solid ${({ theme }) => theme.colors.primary};
 
   &:hover{
     background-color: ${({ theme }) => theme.colors.primaryHover};
   }
 
   input{
-    border: 1px solid ${(props ) => props.checked ? props.theme.colors.primaryHover : props.theme.colors.primary};
-    /* display: none; */
+    display: none;
   }
 
   cursor: pointer;
