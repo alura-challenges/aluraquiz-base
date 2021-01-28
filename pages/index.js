@@ -1,13 +1,21 @@
 import styled from 'styled-components'
 import db from '../db.json';
-import Widget from '../src/components/Widget'
-import QuizLogo from '../src/components/QuizLogo'
-import QuizBackground from '../src/components/QuizBackground'
-import Footer from '../src/components/Footer'
-import GitHubCorner from '../src/components/GitHubCorner'
-import { useRouter } from 'next/router';
+import Widget from '../src/components/Widget';
+import QuizLogo from '../src/components/QuizLogo';
+import QuizBackground from '../src/components/QuizBackground';
+import Footer from '../src/components/Footer';
+import GitHubCorner from '../src/components/GitHubCorner';
+import Input from '../src/components/Input';
+import Button from '../src/components/Button';
 
-export const QuizContainer = styled.div`
+// const BackgroundImage = styled.div`
+//   background-image: url(${db.bg});
+//   flex: 1;
+//   background-size: cover;
+//   background-position: center;
+// `;
+
+const QuizContainer = styled.div`
   width: 100%;
   max-width: 350px;
   padding-top: 45px;
@@ -24,6 +32,9 @@ export default function Home() {
 
   return (
     <QuizBackground backgroundImage={db.bg}>
+      <Head>
+        <title>{db.title}</title>
+      </Head>
       <QuizContainer>
         <QuizLogo />
         <Widget>
@@ -32,26 +43,22 @@ export default function Home() {
           </Widget.Header>
           <Widget.Content>
             <p>{db.description}</p>
-        <form onSubmit={function (infosDoEvento) {
-          infosDoEvento.preventDefault();
-          router.push(`/quiz?name=${name}`);
-          console.log('Fazendo uma submissão por meio do react');
-        }}
-        >
-          <input
-            onChange={function (infosDoEvento) {
-              console.log(infosDoEvento.target.value);
-              // State
-              // name = infosDoEvento.target.value;
-              setName(infosDoEvento.target.value);
+            <form onSubmit={function (infosDoEvento) {
+              infosDoEvento.preventDefault();
+              router.push(`/quiz?name=${name}`);
+              console.log('Fazendo uma submissão por meio do react');
             }}
-            placeholder="Diz ai seu nome"
-          />
-          <button type="submit" disabled={name.length === 0}>
-            Jogar
-          </button>
-        </form>
-
+            >
+              <Input
+                name="nomeDoUsuario"
+                onChange={(infosDoEvento) => setName(infosDoEvento.target.value)}
+                placeholder="Diz ai seu nome"
+                value={name}
+              />
+              <Button type="submit" disabled={name.length === 0}>
+                {`Jogar ${name}`}
+              </Button>
+            </form>
           </Widget.Content>
         </Widget>
 
