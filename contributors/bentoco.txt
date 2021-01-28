@@ -1,2 +1,2 @@
 bentoco
-tibia-quizz.vercel.app
+https://tibia-quizz.vercel.app/
