@@ -4,27 +4,65 @@
   "description": "Teste os seus conhecimentos sobre Matemática e vamos ver quantos zeros você vai superar!",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
-      "answer": 2,
+      "image": "https://media.giphy.com/media/xT9IgGJVF8qZ0zrZD2/giphy.gif",
+      "title": "Qual o resultado da expressão 1-2*4/2 ?",
+      "description": "Essa é pra aquecer.",
+      "answer": 1,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "-2",
+        "-3",
+        "+4",
+        "42"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "image": "https://media.giphy.com/media/xT9IgGJVF8qZ0zrZD2/giphy.gif",
+      "title": "A união entre dois conjuntos consiste em:",
+      "description": "foco na matemática, essa é a relação!",
+      "answer": 2,
+      "alternatives": [
+         "Somar os elementos de um conjunto em outro.",
+         "Somar os elementos de ambos os conjuntos.",
+         "Criar um novo conjunto que contenha todos os elementos de ambos os conjuntos.",
+         "Chegar ao resultado 42."
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/UKkes2qN2T70s/giphy.gif",
+      "title": "O triângulo retângulo tem qual característica?",
+      "description": "olha a dica no nome dele.",
+      "answer": 2,
+      "alternatives": [
+         "Ele não parece quadrado.",
+         "Ele parece um retângulo.",
+         "Um dos ângulos é 90 graus.",
+         "Um dos lados mede 42."
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/l1Joj8m4IUAGFCRkQ/giphy.gif",
+      "title": "Um bom uso para a média aritmetica simples:",
+      "description": "parece opinião, mas tem suas razões!",
+      "answer": 2,
+      "alternatives": [
+         "Tenho um monte de informação e preciso resumí-las.",
+         "Tenho uma planilha gigante, e preciso fazer uma firula.",
+         "Os dados são uniformes entre si, sem muita discrepância.",
+         "Tenho 42 informações."
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/xT9IgusfDcqpPFzjdS/giphy.gif",
+      "title": "Qual o motivo de o MMC ter subido a escada?",
+      "description": "essa é boa!",
       "answer": 0,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+         "Pra ver o MDC.",
+         "Pra subir",
+         "Pra chegar a 42."
       ]
     }
+
   ],
   "external": [
     ""
