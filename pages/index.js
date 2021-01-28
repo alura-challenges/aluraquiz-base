@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import db from '../db.json';
+import Head from 'next/head';
 import Widget from '../src/components/Widget';
 import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
@@ -7,6 +8,7 @@ import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import Input from '../src/components/Input';
 import Button from '../src/components/Button';
+import { useRouter } from 'next/router';
 
 // const BackgroundImage = styled.div`
 //   background-image: url(${db.bg});
