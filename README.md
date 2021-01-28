@@ -49,6 +49,7 @@ Você pode dar uma olhada nesse link e separar uma palheta que combine com sua i
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/kibolho"><img src="https://avatars.githubusercontent.com/u/1197923?s=400&u=33ba0606c52f2080be87a6bdbc8ddee75a46e039&v=4" width="100px;" alt=""/><br /><sub><b>Abílio Azevedo</b></sub></a><br /><a href="https://github.com/alura-challenges/aluraquiz-base/commits?author=kibolho" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/rmmarquini"><img src="https://avatars.githubusercontent.com/u/18682560?s=460&u=1a9040a9392c83b65d2d47e87ef811585d3bdfab&v=4" width="100px;" alt=""/><br /><sub><b>Rafael Marquini</b></sub></a><br /><a href="https://github.com/alura-challenges/aluraquiz-base/commits?author=rmmarquini" title="Rocket">:rocket:</a></td>
   </tr>
 </table>
 
