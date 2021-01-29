@@ -28,6 +28,7 @@ function ResultWidget() {
 
 function QuestionWidget(props) {
   const [selectedAlternative, setSelectedAlternative] = useState(undefined)
+  const [isQuestionSubmited, setIsQuestionSubmited] = useState(false)
   const isCorrect = selectedAlternative === props.question.answer
   const questionId = `question__${props.questionIndex}`;
   return (
@@ -52,7 +53,12 @@ function QuestionWidget(props) {
         <form
           onSubmit={(user) => {
             user.preventDefault();
-            props.onSubmit();
+            setIsQuestionSubmited(true)
+            setTimeout(() => {
+              props.onSubmit();
+              setSelectedAlternative(undefined)
+              setIsQuestionSubmited(false)
+            }, 3 * 1000)
           }}
         >
           {props.question.alternatives.map((alternative, alternativeIndex) => {
@@ -75,8 +81,8 @@ function QuestionWidget(props) {
           })}
           <Button type="submit">Confirmar</Button>
         </form>
-        {isCorrect && <p>Você acertou!</p>}
-        {!isCorrect && <p>Você errou!</p>}
+        {isCorrect && isQuestionSubmited && <p>Você acertou!</p>}
+        {!isCorrect && isQuestionSubmited && <p>Você errou!</p>}
       </Widget.Content>
     </Widget>
   );
@@ -99,7 +105,7 @@ export default function QuizPage() {
     //Simular uma busca de dados em uma API - fetch()
     setTimeout(() => {
       setScreenState(screenStates.QUIZ);
-    }, 1000);
+    }, 1 * 1000);
   }, []);
 
   function handleSubmitQuiz() {
