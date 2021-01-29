@@ -11,12 +11,14 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 12,
+    ecmaVersion: 2018,
     sourceType: 'module',
   },
   plugins: [
     'react',
   ],
   rules: {
+    'linebreak-style': ['error', 'windows'],
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
   },
 };
