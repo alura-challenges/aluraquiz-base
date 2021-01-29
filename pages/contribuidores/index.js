@@ -27,7 +27,7 @@ export const QuizContainer = styled.div`
 function Image({ src, indice }) {
 //  const [width, height] = [852, 480];
   const thumbnail = `
-https://gerador-de-imagens.vercel.app/api/image-generator?url=${src}
+https://gerador-de-imagens.alura-challenges.vercel.app/?url=${src}
   `;
 
   return (
