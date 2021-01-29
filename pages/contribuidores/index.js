@@ -25,7 +25,7 @@ export const QuizContainer = styled.div`
 `;
 
 function Image({ src, indice }) {
-  const key = 'fe6311';
+  const key = '8c4ed9';
   const [width, height] = [852, 480];
   const thumbnail = `
 https://api.screenshotmachine.com?key=${key}&url=${src}&dimension=${width}x${height}
