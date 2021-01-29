@@ -33,10 +33,10 @@ https://api.screenshotmachine.com?key=${key}&url=${src}&dimension=${width}x${hei
 
   return (
     <a href={src} style={{ display: 'inline-block', fontSize: '0' }}>
-      <NextImage
+      <img
         style={{ width: '100%', height: '250px', objectFit: 'cover' }}
-        width={width}
-        height={height}
+        // width={width}
+        // height={height}
         src={thumbnail}
       />
     </a>
