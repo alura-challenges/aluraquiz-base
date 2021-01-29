@@ -27,6 +27,8 @@ function ResultWidget() {
 }
 
 function QuestionWidget(props) {
+  const [selectedAlternative, setSelectedAlternative] = useState(undefined)
+  const isCorrect = selectedAlternative === props.question.answer
   const questionId = `question__${props.questionIndex}`;
   return (
     <Widget>
@@ -56,14 +58,25 @@ function QuestionWidget(props) {
           {props.question.alternatives.map((alternative, alternativeIndex) => {
             const alternativeId = `alternativ__${alternativeIndex}`;
             return (
-              <Widget.Topic key={alternativeId} as="label" htmlFor={alternativeId}>
-                <input type="radio" id={alternativeId} name={questionId} />
+              <Widget.Topic
+                key={alternativeId}
+                as="label" 
+                htmlFor={alternativeId}
+              >
+                <input
+                  type="radio"
+                  id={alternativeId}
+                  name={questionId}
+                  onChange={() => setSelectedAlternative(alternativeIndex)}
+                />
                 {alternative}
               </Widget.Topic>
             );
           })}
           <Button type="submit">Confirmar</Button>
         </form>
+        {isCorrect && <p>Você acertou!</p>}
+        {!isCorrect && <p>Você errou!</p>}
       </Widget.Content>
     </Widget>
   );
