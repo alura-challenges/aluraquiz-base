@@ -31,7 +31,7 @@ export default function Home() {
                 <title>Alura Quiz - Tibia</title>
             </Head>
             <QuizContainer>
-                <QuizLogo src="https://i.imgur.com/I7XsveX.png" />
+                <QuizLogo src={db.logo} />
                 <Widget>
                     <Widget.Content>
                         <p>{db.description}</p>

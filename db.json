@@ -1,5 +1,6 @@
 {
     "bg": "https://i.imgur.com/omi25W8.jpg",
+    "logo": "https://i.imgur.com/I7XsveX.png",
     "title": "Tibia Quizz",
     "description": "Um questionário para testar sua experiência como guerreiro tibiano",
     "questions": [
@@ -19,7 +20,7 @@
         },
         {
             "image": "https://www.tibiawiki.com.br/images/a/a9/The_Demon_Oak.gif",
-            "title": "É necessário matar quantos Demons para realizar a The Demon Oak Quest ",
+            "title": "É necessário matar quantos Demons para realizar a The Demon Oak Quest?",
             "description": "Não vale olhar no wiki!!!",
             "answer": 2,
             "alternatives": ["666", "1239", "6666", "999"]

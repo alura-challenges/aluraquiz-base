@@ -1,12 +1,12 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
-import db from '../db.json'
-import Widget from '../src/components/Widget'
-import QuizLogo from '../src/components/QuizLogo'
-import QuizBackground from '../src/components/QuizBackground'
-import QuizContainer from '../src/components/QuizContainer'
-import AlternativesForm from '../src/components/AlternativesForm'
-import Button from '../src/components/Button'
+import db from '../../db.json'
+import Widget from '../../src/components/Widget'
+import QuizLogo from '../../src/components/QuizLogo'
+import QuizBackground from '../../src/components/QuizBackground'
+import QuizContainer from '../../src/components/QuizContainer'
+import AlternativesForm from '../../src/components/AlternativesForm'
+import Button from '../../src/components/Button'
 
 function ResultWidget({ results }) {
     return (
@@ -66,17 +66,22 @@ function QuestionWidget({
     return (
         <Widget>
             <Widget.Header>
-                {/* <BackLinkArrow href="/" /> */}
-                <h3>{`Pergunta ${questionIndex + 1} de ${totalQuestions}`}</h3>
+                <h2> {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}</h2>
             </Widget.Header>
-            return (
+
+            <img
+                alt="Descrição"
+                style={{
+                    width: '40%',
+                    height: '150px',
+                    objectFit: 'cover',
+                    marginTop: '10px',
+                }}
+                src={question.image}
+            />
             <Widget.Content>
-                <Widget.Header>
-                    {/* <BackLinkArrow href="/" /> */}
-                    <h3>{`Pergunta ${
-                        questionIndex + 1
-                    } de ${totalQuestions}`}</h3>
-                </Widget.Header>
+                <h2>{question.title}</h2>
+                <p>{question.description}</p>
 
                 <AlternativesForm
                     onSubmit={(infosDoEvento) => {
@@ -87,7 +92,7 @@ function QuestionWidget({
                             onSubmit()
                             setIsQuestionSubmited(false)
                             setSelectedAlternative(undefined)
-                        }, 3 * 1000)
+                        }, 2 * 1000)
                     }}
                 >
                     {question.alternatives.map(
@@ -181,7 +186,7 @@ export default function QuizPage() {
     return (
         <QuizBackground backgroundImage={db.bg}>
             <QuizContainer>
-                <QuizLogo />
+                <QuizLogo src={db.logo} />
                 {screenState === screenStates.QUIZ && (
                     <QuestionWidget
                         question={question}
