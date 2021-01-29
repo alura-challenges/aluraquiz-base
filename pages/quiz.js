@@ -30,6 +30,7 @@ function QuestionWidget(props) {
   const [selectedAlternative, setSelectedAlternative] = useState(undefined)
   const [isQuestionSubmited, setIsQuestionSubmited] = useState(false)
   const isCorrect = selectedAlternative === props.question.answer
+  const hasQuestionSubmited = selectedAlternative !== undefined
   const questionId = `question__${props.questionIndex}`;
   return (
     <Widget>
@@ -79,7 +80,7 @@ function QuestionWidget(props) {
               </Widget.Topic>
             );
           })}
-          <Button type="submit">Confirmar</Button>
+          <Button type="submit" disabled={!hasQuestionSubmited}>Confirmar</Button>
         </form>
         {isCorrect && isQuestionSubmited && <p>Você acertou!</p>}
         {!isCorrect && isQuestionSubmited && <p>Você errou!</p>}
