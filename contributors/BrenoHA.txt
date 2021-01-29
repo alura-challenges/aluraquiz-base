@@ -1,2 +1,2 @@
 BrenoHA
-quiz-react.brenoha.vercel.app/
+https://quiz-react.brenoha.vercel.app/
