@@ -74,14 +74,16 @@ function QuestionWidget(props) {
           }}
         >
           {props.question.alternatives.map((alternative, alternativeIndex) => {
-            const alternativeId = `alternativ__${alternativeIndex}`;
+            const alternativeId = `alternativ__${alternativeIndex}`
+            const alternativeStatus = isCorrect ? 'SUCCESS' : 'ERROR'
+            const isSelected = selectedAlternative === alternativeIndex
             return (
               <Widget.Topic
                 key={alternativeId}
                 as="label" 
                 htmlFor={alternativeId}
-                data-selected={false}
-                data-status="SUCCESS"
+                data-selected={isSelected}
+                data-status={isQuestionSubmited && alternativeStatus}
               >
                 <input
                   style={{display: 'none'}}
