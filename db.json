@@ -1,16 +1,7 @@
 {
-  "bg": {
-    "original": "https://i2.wp.com/css-tricks.com/wp-content/uploads/2017/06/css-is-awesome-scaled.jpg?resize=1536%2C1208&ssl=1",
-    "enigma": "https://wallpaperaccess.com/full/265236.jpg"
-  },
-  "title": {
-    "alura": "Quiz CSS da Alura",
-    "enigma": "Enigma Quiz"
-  },
-  "description": {
-    "alura": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
-    "enigma": "Será que você sabe a resposta para os enigmas???"
-  },  
+  "bg": "https://wallpaperaccess.com/full/265236.jpg",
+  "title": "Enigma Quiz",
+  "description": "Será que você sabe a resposta para os enigmas???",  
   "questions": [
     {
       "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
@@ -39,17 +30,10 @@
     ""
   ],
   "theme": {
-    "originalColors": {
-      "primary": "#0d47a1",
-      "secondary": "#29b6f6",
-      "mainBg": "#171B35"
-    },
-    "enigmaColors": {
+    "colors": {
       "primary": "#1b5e20",
       "secondary": "#81c784",
-      "mainBg": "#124116"
-    },
-    "colors": {
+      "mainBg": "#124116",
       "contrastText": "#FFFFFF",
       "wrong": "#FF5722",
       "success": "#4CAF50"

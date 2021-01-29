@@ -2,26 +2,20 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 // database
 import db from '../db.json';
-// components
+// styled components
+import Input from '../src/components/Input';
 import Widget from '../src/components/Widget';
-import QuizLogo from '../src/components/QuizLogo';
-import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
+import Button from '../src/components/Button';
+import QuizLogo from '../src/components/QuizLogo';
 import GitHubCorner from '../src/components/GitHubCorner';
 import QuizContainer from '../src/components/QuizContainer';
-import Form from '../src/components/Form';
-
-// const BackgroundImage = styled.div`
-//   background-image: url(${db.bg});
-//   flex: 1;
-//   background-size: cover;
-//   background-position: center;
-// `;
+import QuizBackground from '../src/components/QuizBackground';
 
 export default function Home() {
   const [name, setName] = useState('');
   console.log('name: ', name, 'setName:', setName);
-  
+
   const router = useRouter();
 
   const handleSubmit = () => {
@@ -29,35 +23,32 @@ export default function Home() {
   };
 
   return (
-    <QuizBackground backgroundImage={db.bg.enigma}>
+    <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
         <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>{db.title.enigma}</h1>
+            <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>{db.description.enigma}</p>
+            <p>{db.description}</p>
 
-            <Form onSubmit={(e) => {
+            <form onSubmit={(e) => {
               e.preventDefault();
               console.log('Form submited from home page!');
               handleSubmit();
-            }}>
-              <input
+            }}
+            >
+              <Input
                 type="text"
                 placeholder="Quem vai jogar?"
-                onChange={(e) => {setName(e.target.value)}}
+                onChange={(e) => setName(e.target.value)}
               />
 
-              <button
-                type="submit"
-                // validating button
-                disabled={name.length === 0}
-              >
-                Jogar
-              </button>
-            </Form>
+              <Button type="submit" disabled={!name.length}>
+                {`Jogar ${name}`}
+              </Button>
+            </form>
           </Widget.Content>
         </Widget>
 

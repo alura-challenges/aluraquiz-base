@@ -1,5 +1,4 @@
 // src/components/QuizContainer/index.js
-import React from 'react';
 import styled from 'styled-components';
 
 const QuizContainer = styled.div`
