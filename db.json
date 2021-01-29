@@ -101,8 +101,8 @@
         }
     ],
     "external": [
+        "https://flow-quiz.garubieru.vercel.app/",
         "https://mrrobot-quiz.xandowski.vercel.app/",
-        "https://tsquiz.esterfania.vercel.app/",
         "https://kimetsuquiz-base.lilitbandeira.vercel.app/"
     ],
     "theme": {
