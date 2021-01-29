@@ -5,25 +5,95 @@
     "description": "Teste os seus conhecimentos sobre inclusão e acessibilidade na tecnologia. Pronto para jogar?",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
+        "image": "/question1.gif",
+        "title": "O que são os conceitos de acessibilidade e inclusão social?",
+        "description": "Essa é pra aquecer, vamos lá!",
+        "answer": 0,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Participação de todas as pessoas nos vários âmbitos da vida social",
+          "Maneira tradicional de tratar isoladamente o trânsito",
+          "Usar a hashtag #PraCegoVer",
+          "Usar pronome neutro"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "/question2.gif",
+        "title": "Devemos pensar em acessibilidade somente quando falamos sobre o acesso das pessoas cadeirantes e cegas?",
+        "description": "Tenho certeza que já sabe a resposta!",
+        "answer": 1,
+        "alternatives": [
+          "Sim",
+          "Não"
+        ]
+      },
+      {
+        "image": "/question3.gif",
+        "title": "Qual a porcentagem (%) da população brasileira que tem algum tipo de deficiência física ou cognitiva?",
+        "description": "Vamos começar a dificultar um pouco as perguntas, está pronto?!",
+        "answer": 2,
+        "alternatives": [
+           "7%",
+           "18%",
+           "25%",
+           "42%"
+        ]
+      },
+      {
+        "image": "/question4.gif",
+        "title": "Devemos pensar em acessibilidade no mundo técnológico? Como no desenvolvimento de novos aplicativos, soluções corporativas, dispositivos físicos e outros?",
+        "description": "Pergunta para abrir a mente",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+          "Sim",
+          "Não"
+        ]
+      },
+      {
+        "image": "/question5.gif",
+        "title": "Qual o termo correto para referir a uma pessoa com algum tipo de deficiência física ou cognitiva?",
+        "description": "É o mais aceito, no entanto talvez no futuro possa não ser mais.",
+        "answer": 3,
+        "alternatives": [
+           "pessoas com necessidades especiais (PNE)",
+           "Pessoa com problema (PCP)",
+           "Portador (PP)",
+           "Pessoa com deficiência (PCD)"
+        ]
+      },
+      {
+        "image": "/question6.gif",
+        "title": "Qual item abaixo NÃO é uma deficiência, transtorno, síndrome ou particularidade:",
+        "description": "O ponto desta questão está de graça!",
+        "answer": 5,
+        "alternatives": [
+           "Autismo",
+           "Surdez",
+           "Dislexia",
+           "Baixa visão",
+           "Deficiência física",
+           "Preguiça"
+        ]
+      },
+      {
+        "image": "/question7.gif",
+        "title": "Em qual documentação encontraremos as orientações sobre como deixar nossas páginas web mais acessíveis?",
+        "description": "Vamos lá, caso não conhecer está tudo bem, mas como desenvolvedor Front-end você deve começar a utilizar.",
+        "answer": 1,
+        "alternatives": [
+           "Bootstrap Documentation",
+           "Web Content Accessibility Guidelines (WCAG)",
+           "Next Documentation",
+           "ECMA-262"
+        ]
+      },
+      {
+        "image": "/question-final.gif",
+        "title": "Você vai começar a pensar, estudar e implementar a acessibilidade nos seus projetos futuros e ir alem?",
+        "description": "Essa é para encerrarmos, temos certeza que você foi bem!",
+        "answer": 0,
+        "alternatives": [
+           "Sim, vou fazer isso!",
+           "Não, :("
         ]
       }
     ],
