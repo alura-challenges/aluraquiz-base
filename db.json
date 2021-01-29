@@ -1,7 +1,7 @@
 {
     "bg": "https://i.imgur.com/omi25W8.jpg",
     "title": "Tibia Quizz",
-    "description": "Um questionário para testar sua experiência como guerreiro Tibiano",
+    "description": "Um questionário para testar sua experiência como guerreiro tibiano",
     "questions": [
         {
             "image": "https://www.tibiawiki.com.br/images/d/d0/Cipfried.gif",
@@ -104,7 +104,7 @@
         "colors": {
             "primary": "#14213d",
             "secondary": "#9a031e",
-            "mainBg": "#14213d",
+            "mainBg": "#1d3557",
             "contrastText": "#fca311",
             "wrong": "#fb5607",
             "success": "#2b9348"

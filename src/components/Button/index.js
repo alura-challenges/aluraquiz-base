@@ -14,13 +14,13 @@ const Button = styled.button`
     text-transform: uppercase;
     outline: 0;
     transition: 0.3s;
+    font-family: 'Sofadi One', cursive;
     cursor: pointer;
     &:hover,
     &:focus {
         opacity: 0.5;
     }
     &:disabled {
-        background-color: #979797;
         cursor: not-allowed;
     }
 `

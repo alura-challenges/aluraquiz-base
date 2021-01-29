@@ -33,7 +33,6 @@ export default function Home() {
             <QuizContainer>
                 <QuizLogo src="https://i.imgur.com/I7XsveX.png" />
                 <Widget>
-                    <Widget.Header></Widget.Header>
                     <Widget.Content>
                         <p>{db.description}</p>
                         <form onSubmit={handleSubmit}>
