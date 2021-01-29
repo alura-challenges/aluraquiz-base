@@ -39,7 +39,10 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
-        <title>AluraQuiz - Modelo Base</title>
+        <title>
+          AluraQuiz -
+          {db.title}
+        </title>
       </Head>
       <QuizContainer>
         <QuizLogo />
@@ -54,9 +57,10 @@ export default function Home() {
           animate="show"
         >
           <Widget.Header>
-            <h1>#JavaScriptQuiz</h1>
+            <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
+            <p>{db.description}</p>
             <form onSubmit={function (infosDoEvento) {
               infosDoEvento.preventDefault();
               router.push(`/quiz?name=${name}`);
