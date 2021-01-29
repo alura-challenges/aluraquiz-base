@@ -99,7 +99,10 @@
             "alternatives": ["1992", "1998", "1994", "1997"]
         }
     ],
-    "external": [""],
+    "external": [
+        "https://tibia-quizz.bentoco.vercel.app/",
+        "https://tibia-quizz.bentoco.vercel.app/"
+    ],
     "theme": {
         "colors": {
             "primary": "#14213d",
