@@ -17,18 +17,7 @@ function ResultWidget({ results }) {
 
       <Widget.Content>
         <p>
-          Você acertou
-          {' '}
-          {/* {results.reduce((somatoriaAtual, resultAtual) => {
-            const isAcerto = resultAtual === true;
-            if (isAcerto) {
-              return somatoriaAtual + 1;
-            }
-            return somatoriaAtual;
-          }, 0)} */}
-          {results.filter((x) => x).length}
-          {' '}
-          perguntas
+          Você acertou {` ${results.filter((x) => x).length} `} perguntas
         </p>
         <ul>
           {results.map((result, index) => (
@@ -95,7 +84,7 @@ function QuestionWidget({
       />
       <Widget.Content>
         <h2>
-          {question.title}
+          {question.title}?
         </h2>
         <p>
           {question.description}
