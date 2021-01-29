@@ -25,10 +25,9 @@ export const QuizContainer = styled.div`
 `;
 
 function Image({ src, indice }) {
-  const key = '8c4ed9';
-  const [width, height] = [852, 480];
+//  const [width, height] = [852, 480];
   const thumbnail = `
-https://gerador-de-imagens-three.vercel.app/api/image-generator?url=${src}
+https://gerador-de-imagens.vercel.app/api/image-generator?url=${src}
   `;
 
   return (
