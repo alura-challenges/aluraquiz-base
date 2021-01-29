@@ -44,14 +44,13 @@
     }
   ],
   "external": [
-    "https://aluraquiz-base.alura-challenges.vercel.app/",
     "https://aluraquiz-css.omariosouto.vercel.app/",
     "https://aluraquiz-devsoutinho.omariosouto.vercel.app/"
   ],
   "theme": {
     "colors": {
       "primary": "#222222",
-      "secondary": "#e8be3f",
+      "secondary": "#e89c3f",
       "mainBg": "#213f4e",
       "contrastText": "#FFFFFF",
       "wrong": "#FF5722",
