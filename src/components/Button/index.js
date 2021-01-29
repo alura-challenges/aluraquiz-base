@@ -7,13 +7,13 @@ const Button = styled.button`
     height:38px;
     fontsize: 14px;
     background-color: ${({ theme }) => theme.colors.mainBg};
-    ${'' /* line-height: 1; */}
+    border: 1px solid ${({ theme }) => theme.colors.secondary};
+    border-radius: ${({ theme }) => theme.borderRadius};
     text-transform: uppercase;
     outline: 0;
     transition: 0.3s;
     cursor: pointer;
     color: #fff;
-    ${'' /* letter-spacing: 1.7px; */}
 
     &:hover {
         background-color: ${({ theme }) => theme.colors.primary};

@@ -7,7 +7,7 @@
       "image": "https://super.abril.com.br/wp-content/uploads/2018/12/viagem.png",
       "title": "Sem sair do meu canto sou capaz de viajar pelo mundo. O que sou eu?",
       "description": "Não viaja...",
-      "answer": 3,
+      "answer": 2,
       "alternatives": [
         "A TV",
         "O computador",
@@ -19,7 +19,7 @@
       "image": "https://www.asbeiras.pt/wp-content/uploads/2019/10/agua.jpg",
       "title": "Sou feito de água e dentro de água morro. O que sou eu?",
       "description": "Não metas agua nesta",
-      "answer": 3,
+      "answer": 2,
       "alternatives": [
          "Agua viva",
          "Gelatina",
@@ -30,7 +30,7 @@
       "image": "https://i.pinimg.com/originals/28/9a/f8/289af8ec821583d4663d14f94fb4b99e.jpg",
       "title": "Existo por uma vez num minuto, por duas a cada momento nunca em quinhentos anos...",
       "description": "Whaaatt????",
-      "answer": 2,
+      "answer": 1,
       "alternatives": [
          "A letra '0'",
          "A letra 'M'",
@@ -41,7 +41,7 @@
       "image": "https://www.marciafernandes.com.br/site/wp-content/uploads/2012/02/energia_olhar.jpg",
       "title": "Olha-me no rosto e não encontrarás 13",
       "description": "Olha...",
-      "answer": 3,
+      "answer": 2,
       "alternatives": [
          "Espelho",
          "Calendário",
@@ -52,7 +52,7 @@
       "image": "https://chocolategurlworld.files.wordpress.com/2014/07/wpid-12.jpg",
       "title": "Sempre a caminho mas nunca chega",
       "description": "Conheço uns quantos...",
-      "answer": 2,
+      "answer": 1,
       "alternatives": [
          "Caracol",
          "Futuro",
@@ -64,7 +64,7 @@
       "image": "https://www.kik.com/uploads/files/unamused.gif",
       "title": "Sou teu para ser usado por todos",
       "description": "Hum! O que é isso? O que é meu, é meu.",
-      "answer": 1,
+      "answer": 0,
       "alternatives": [
          "O teu nome",
          "O teu dinheiro",
@@ -76,7 +76,7 @@
       "image": "https://www.memecreator.org/static/images/templates/2211952.jpg",
       "title": "Sou mais útil quando me quebram",
       "description": "O que será?",
-      "answer": 1,
+      "answer": 0,
       "alternatives": [
          "O ovo",
          "O lacre",
@@ -87,7 +87,7 @@
       "image": "https://cdn-prod.medicalnewstoday.com/content/images/articles/170/170634/double-vision-blurred-hand-crop.jpg",
       "title": "De ti faço dois",
       "description": "Para terminar",
-      "answer": 3,
+      "answer": 2,
       "alternatives": [
          "Foto",
          "Video",

@@ -6,8 +6,8 @@ const InputBase = styled.input`
     width: 100%;
     padding: 15px;
     font-size: 14px;
-    border: 1px solid ${({ theme }) => theme.secondary};
-    background-color: ${({ theme }) => theme.mainBg};
+    border: 1px solid ${({ theme }) => theme.colors.secondary};
+    background-color: ${({ theme }) => theme.colors.mainBg};
     border-radius: ${({ theme }) => theme.borderRadius};
     outline: 0;
     margin-bottom: 25px;
@@ -15,13 +15,13 @@ const InputBase = styled.input`
     font-weight: 300;
 
     ::-webkit-input-placeholder {
-            color: ${({ theme }) => theme.secondary};
+            color: ${({ theme }) => theme.colors.secondary};
         }
     ::-moz-placeholde{
-        color: ${({ theme }) => theme.secondary};
+        color: ${({ theme }) => theme.colors.secondary};
     }
     :-ms-input-placeholder {
-        color: ${({ theme }) => theme.secondary};
+        color: ${({ theme }) => theme.colors.secondary};
     }
 `;
 
