@@ -16,12 +16,21 @@ function LoadingWidget() {
   );
 }
 
-function ResultWidget() {
+function ResultWidget(props) {
   return (
     <Widget>
-      <Widget.Header>Você acertou X perguntas</Widget.Header>
+      <Widget.Header>Tela de resultado</Widget.Header>
 
-      <Widget.Content>#1 pregunta: Acertou</Widget.Content>
+      <Widget.Content>
+        <p>Você acertou {props.results.filter(x => x).length} questões</p>
+        <ul>
+          {props.results.map((result, resultIndex) => {
+            const resultId = `result__${resultIndex}`
+            const resp = result ? 'Acertou' : 'Errou'
+            return <li key={resultId}>{`#${resultIndex+1} resposta: ${resp}`}</li>
+          })}
+        </ul>
+      </Widget.Content>
     </Widget>
   );
 }
@@ -56,7 +65,8 @@ function QuestionWidget(props) {
             user.preventDefault();
             setIsQuestionSubmited(true)
             setTimeout(() => {
-              props.onSubmit();
+              props.onSubmit()
+              props.addResult(isCorrect)
               setSelectedAlternative(undefined)
               setIsQuestionSubmited(false)
             }, 3 * 1000)
@@ -98,12 +108,20 @@ const screenStates = {
 export default function QuizPage() {
   const [screenState, setScreenState] = useState(screenStates.LOADING);
   const totalQuestions = db.questions.length;
+  const [results, setResults] = useState([])
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const questionIndex = currentQuestion;
   const question = db.questions[questionIndex];
 
+  function addResult(result) {
+    setResults([
+      ...results,
+      result
+    ])
+  }
+
   useEffect(() => {
-    //Simular uma busca de dados em uma API - fetch()
+    // Simular uma busca de dados em uma API - fetch()
     setTimeout(() => {
       setScreenState(screenStates.QUIZ);
     }, 1 * 1000);
@@ -128,9 +146,10 @@ export default function QuizPage() {
             questionIndex={questionIndex}
             totalQuestions={totalQuestions}
             onSubmit={handleSubmitQuiz}
+            addResult={addResult}
           />
         )}
-        {screenState === "RESULT" && <ResultWidget />}
+        {screenState === "RESULT" && <ResultWidget results={results} />}
       </QuizContainer>
     </QuizBackground>
   );
