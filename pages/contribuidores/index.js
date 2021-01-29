@@ -28,7 +28,7 @@ function Image({ src, indice }) {
   const key = '8c4ed9';
   const [width, height] = [852, 480];
   const thumbnail = `
-https://api.screenshotmachine.com?key=${key}&url=${src}&dimension=${width}x${height}
+https://gerador-de-imagens-three.vercel.app/api/image-generator?url=${src}
   `;
 
   return (
