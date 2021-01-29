@@ -26,16 +26,17 @@ export const QuizContainer = styled.div`
 
 function Image({ src, indice }) {
   const key = 'fe6311';
+  const [width, height] = [852, 480];
   const thumbnail = `
-https://api.screenshotmachine.com?key=${key}&url=${src}&dimension=1024x768&cacheLimit=2
+https://api.screenshotmachine.com?key=${key}&url=${src}&dimension=${width}x${height}
   `;
 
   return (
     <a href={src} style={{ display: 'inline-block', fontSize: '0' }}>
-      <NextImage
+      <img
         style={{ width: '100%', height: '250px', objectFit: 'cover' }}
-        width="1024"
-        height="768"
+        // width={width}
+        // height={height}
         src={thumbnail}
       />
     </a>
