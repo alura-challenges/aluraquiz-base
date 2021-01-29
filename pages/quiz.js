@@ -4,6 +4,7 @@ import db from "../db.json";
 import QuizBackground from "../src/components/QuizBackground";
 import QuizContainer from "../src/components/QuizContainer";
 import Widget from "../src/components/Widget";
+import AlternativesForm from "../src/components/AlternativesForm";
 import Button from "../src/components/Button";
 
 function LoadingWidget() {
@@ -60,7 +61,7 @@ function QuestionWidget(props) {
       <Widget.Content>
         <h2>{props.question.title}</h2>
         <p>{props.question.description}</p>
-        <form
+        <AlternativesForm
           onSubmit={(user) => {
             user.preventDefault();
             setIsQuestionSubmited(true)
@@ -79,8 +80,11 @@ function QuestionWidget(props) {
                 key={alternativeId}
                 as="label" 
                 htmlFor={alternativeId}
+                data-selected={false}
+                data-status="SUCCESS"
               >
                 <input
+                  style={{display: 'none'}}
                   type="radio"
                   id={alternativeId}
                   name={questionId}
@@ -91,7 +95,7 @@ function QuestionWidget(props) {
             );
           })}
           <Button type="submit" disabled={!hasQuestionSubmited}>Confirmar</Button>
-        </form>
+        </AlternativesForm>
         {isCorrect && isQuestionSubmited && <p>Você acertou!</p>}
         {!isCorrect && isQuestionSubmited && <p>Você errou!</p>}
       </Widget.Content>
