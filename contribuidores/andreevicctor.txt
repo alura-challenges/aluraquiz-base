@@ -1,2 +1,2 @@
 andreevicctor
-https://halloween-quiz.andreevicctor.vercel.app
+https://halloween-quiz.andreevicctor.vercel.app/
