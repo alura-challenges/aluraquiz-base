@@ -70,7 +70,7 @@ export default function Home() {
               <Input
                 name="nomeDoUsuario"
                 onChange={(infosDoEvento) => setName(infosDoEvento.target.value)}
-                placeholder="Qual o seu nome"
+                placeholder="Diz ai seu nome"
                 value={name}
               />
               <Button type="submit" disabled={name.length === 0}>
@@ -126,7 +126,7 @@ export default function Home() {
           animate="show"
         />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/maic0n" />
+      <GitHubCorner projectUrl="https://github.com/omariosouto" />
     </QuizBackground>
   );
 }
