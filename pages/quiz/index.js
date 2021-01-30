@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 
-import db from "../db.json";
-import QuizBackground from "../src/components/QuizBackground";
-import QuizContainer from "../src/components/QuizContainer";
-import Widget from "../src/components/Widget";
-import AlternativesForm from "../src/components/AlternativesForm";
-import Button from "../src/components/Button";
+import db from "../../db.json";
+import QuizBackground from "../../src/components/QuizBackground";
+import QuizContainer from "../../src/components/QuizContainer";
+import Widget from "../../src/components/Widget";
+import AlternativesForm from "../../src/components/AlternativesForm";
+import Button from "../../src/components/Button";
 
 function LoadingWidget() {
   return (
