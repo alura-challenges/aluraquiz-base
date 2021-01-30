@@ -10,6 +10,7 @@ import Footer from '../src/components/Footer'
 import GitHubCorner from '../src/components/GitHubCorner'
 import Input from '../src/components/Input'
 import Button from '../src/components/Button'
+import Link from '../src/components/Link'
 
 export default function Home() {
   const [name, setName] = useState('')
@@ -51,7 +52,7 @@ export default function Home() {
                 const [projectName, githubUser] = link.replace(/\//g, "").replace("https:", "").replace(".vercel.app", "").split(".")
                 return (
                   <li key={linkIndex}>
-                    <Widget.Topic href={`/quiz/${projectName}___${githubUser}` /*link*/}>
+                    <Widget.Topic as={Link} href={`/quiz/${projectName}___${githubUser}` /*link*/}>
                       {`${githubUser}/${projectName}`}
                     </Widget.Topic>
                   </li>
