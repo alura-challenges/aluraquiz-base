@@ -1,47 +1,21 @@
 {
-  "bg": "https://www.hitalent.co/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMmJDQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--1452099b706ad7d079f7a3a4dd5d702ebeeae45f/HiTalent.png",
-  "title": "Quiz JavaScript #AluraQuiz",
-  "description": "Um quiz rápido sobre o mundo do JavaScript",
+  "bg": "http://www.beeornottobe.com.br/images/2.jpg",
+  "title": "Bee Quiz",
+  "description": "Teste seus conhecimentos sobre nossas amigas abelhas! Salve o Planeta!",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/j5P0DQIOf4PonLi55G/giphy.gif",
-      "title": "Qual a diferença entre = , == e === ?",
-      "description": "Pergunta fácil em!",
+      "image": "https://cptstatic.s3.amazonaws.com/imagens/enviadas/materias/materia9694/abelha-jatai-cursos-cpt.jpg",
+      "title": "Qual o nome correto de uma conhecida abelha e deu origem ao nome de uma cidade?",
+      "description": "Abelhas estão em todos os locais",
       "answer": 1,
       "alternatives": [
-        "São a mesma coisa",
-        "O = significa atribuição de valor. Já == verifica a igualdade do valor, enquanto === verifica valor e tipo de variável."
-      ]
-    },
-    {
-      "image": "https://media.giphy.com/media/Ie2Hs3A0uJRtK/giphy.gif",
-      "title": "Que tipos de dados são suportados em JavaScript?",
-      "description": "E agora? Você sabe?",
-      "answer": 0,
-      "alternatives": [
-        "Number, String, Undefined, Null e Bool.",
-        "Int, String, Undefined, Null e Bool."
-      ]
-    },
-    {
-      "image": "https://media.giphy.com/media/iI4vhciiVh2b3j9sgo/giphy.gif",
-      "title": "Qual a diferença de window e global?",
-      "answer": 1,
-      "alternatives": [
-        "São a mesma coisa",
-        "window é o escopo global no browser, e global no node"
-      ]
-    },
-    {
-      "image": "https://media.giphy.com/media/iI4vhciiVh2b3j9sgo/giphy.gif",
-      "title": "Qual a forma antiga de trabalhar com AJAX na Web?",
-      "answer": 1,
-      "alternatives": [
-        "JSONHttpRequest",
-        "XMLHttpRequest",
-        "fetch"
+        "Jataqui",
+        "Jatai",
+        "Jatali",
+        "jatalá"
       ]
     }
+    
   ],
   "external": [
     "https://aluraquiz-css.omariosouto.vercel.app/",
@@ -49,10 +23,10 @@
   ],
   "theme": {
     "colors": {
-      "primary": "#222222",
-      "secondary": "#e89c3f",
-      "mainBg": "#213f4e",
-      "contrastText": "#FFFFFF",
+      "primary": "#FFB300",
+      "secondary": "#333333",
+      "mainBg": "#ffffa3",
+      "contrastText": "#000000",
       "wrong": "#FF5722",
       "success": "#4CAF50"
     },
