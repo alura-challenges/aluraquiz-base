@@ -14,17 +14,42 @@
         "Jatali",
         "jatalá"
       ]
+    },
+    {
+      "image": "https://www.estimacao.com.br/y/4808/abelhas-e1548249036118.jpg",
+      "title": "Qual a familia das abelhas?",
+      "description": "",
+      "answer": 0,
+      "alternatives": [
+        "Insetos",
+        "Primatas",
+        "Amfibios",
+        "Araquinideos"
+      ]
+    },
+    {
+      "image": "https://abelha.org.br/wp-content/uploads/2017/11/abelha-apis-mellifera-rainha-operaria.jpg",
+      "title": "Qual a princial importancia da rainha na colmeia?",
+      "description": "",
+      "answer": 2,
+      "alternatives": [
+        "Proteger de ataques",
+        "Reinar",
+        "Reprodução",
+        "Vigiar a entrada"
+      ]
     }
     
   ],
   "external": [
     "https://aluraquiz-css.omariosouto.vercel.app/",
     "https://aluraquiz-devsoutinho.omariosouto.vercel.app/"
+
   ],
   "theme": {
     "colors": {
       "primary": "#FFB300",
-      "secondary": "#333333",
+      "secondary": "#232323",
       "mainBg": "#ffffa3",
       "contrastText": "#000000",
       "wrong": "#FF5722",
