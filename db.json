@@ -1,5 +1,10 @@
 {
   "bg": "https://i2.wp.com/css-tricks.com/wp-content/uploads/2017/06/css-is-awesome-scaled.jpg?resize=1536%2C1208&ssl=1",
+  "bgSwitch": {
+    "halloween": "https://pixabay.com/get/g0f1df4b0e4dc0271cec24f42735bfd4a89ba554d81f3457566993bdc347679f6cbe816a2b2291b0b8316178f86e3b63b.svg",
+    "thanksgiving": "https://pixabay.com/get/gf5fbbeb0a311c5b5e88e16bea9a96cc3ab451ded4f3430dc9e6cc572876331cd2bb8e7aaaff21d3aad7b229b78e03af1.jpg",
+    "christmas": "https://pixabay.com/get/g2a81f3e41482623ddfb465262959470f67ac276216389a279e4dba704bef057a79dde46fe9464e41239936e2e20333ed.png"
+  },
   "title": "Quiz CSS da Alura",
   "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
   "questions": [
@@ -29,6 +34,40 @@
   "external": [
     ""
   ],
+  "themeThanksgiving": {
+    "colors": {
+      "primary": "#ff5722",
+      "secondary": "#ff9100",
+      "mainBg": "#181818",
+      "contrastText": "#FFFFFF",
+      "wrong": "#FF5722",
+      "success": "#4CAF50"
+    },
+    "borderRadius": "4px"
+  },
+  "themeHalloween": {
+    "colors": {
+      "primary": "#482880",
+      "secondary": "#ff3d00",
+      "mainBg": "#181818",
+      "contrastText": "#FFFFFF",
+      "wrong": "#FF5722",
+      "success": "#4CAF50"
+  
+    },
+    "borderRadius": "4px"
+  },
+  "themeChristmas": {
+    "colors": {
+      "primary": "#aa2e25",
+      "secondary": "#76ff03",
+      "mainBg": "#181818",
+      "contrastText": "#FFFFFF",
+      "wrong": "#FF5722",
+      "success": "#4CAF50"
+    },
+    "borderRadius": "4px"
+  },
   "theme": {
     "colors": {
       "primary": "#0d47a1",
