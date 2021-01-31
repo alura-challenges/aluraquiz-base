@@ -1,2 +1,0 @@
-tales-garcia
-advanced-typescript-quiz.tales-garcia.vercel.app
