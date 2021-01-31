@@ -1,2 +1,2 @@
 ffsf-filho
-animequiz.ffsf-filho.vercel.app
+https://animequiz.ffsf-filho.vercel.app
