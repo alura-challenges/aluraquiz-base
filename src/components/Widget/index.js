@@ -49,4 +49,11 @@ Widget.Content = styled.div`
   }
 `;
 
+Widget.SwitchThemes = styled.div`
+  padding: 10px 32px;
+  button {
+    margin: 5px;
+  }
+`;
+
 export default Widget;

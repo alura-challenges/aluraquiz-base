@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import db from '../db.json';
 
@@ -24,15 +25,16 @@ const GlobalStyle = createGlobalStyle`
     flex-direction: column;
   }
 `
-
-const theme = db.theme;
+// const theme = db.theme;
 
 export default function App({ Component, pageProps }) {
+  const [themesState, setThemeState] = useState(db.theme);  
+
   return (
     <>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={themesState}>
         <GlobalStyle />
-        <Component {...pageProps} />
+        <Component {...pageProps} changeTheme={setThemeState}/>
       </ThemeProvider>
     </>
   )
