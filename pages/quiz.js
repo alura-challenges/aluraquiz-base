@@ -93,7 +93,7 @@ export default function quizPage() {
     const nextQuestion = questionIndex + 1;
 
     if (nextQuestion < totalQuestions) {
-      setCurrentQuestion(questionIndex + 1);
+      setCurrentQuestion(nextQuestion);
     } else {
       setScreenState(screenStates.RESULT);
     }
@@ -112,7 +112,7 @@ export default function quizPage() {
         />
         )}
         {screenState === screenStates.LOADING && <LoadingWidget />}
-        {screenState === screenStates.RESULT && <div />}
+        {screenState === screenStates.RESULT && <div>Você acertou X questões!!</div>}
         <QuizLogo />
       </QuizContainer>
     </QuizBackground>
