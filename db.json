@@ -1,39 +1,130 @@
 {
-  "bg": "https://images.unsplash.com/photo-1600936958521-5bee7c0d271e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80",
-  "title": "Quiz Momentos Olimpicos",
-  "description": "Teste os seus conhecimentos sobre os grandes momentos olimpicos, e transforme-se num verdadeiro campeão olimpico",
+  "bg": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "title": "Cafeinados",
+  "description": "Mostre seus conhecimentos cafeinados sobre essa maravilhosa bebida.",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
+      "image": "https://images.unsplash.com/photo-1472495010058-65576a9959e4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "title": "Em qual país o café tem origem?",
+      "description": "",
       "answer": 2,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Indonésia",
+        "Itália",
+        "Etiópia",
+        "Colômbia"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
-      "answer": 0,
+      "image": "https://images.unsplash.com/photo-1491755276353-97642ec79167?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80",
+      "title": "Qual o nome deste método para fazer café?",
+      "description": "",
+      "answer": 1,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+        "Melitta",
+        "Chemex",
+        "Hario V60",
+        "Aeropress"
+      ]
+    },
+    {
+      "image": "https://beans.at/pub/media/wysiwyg/Kaffeewissen/Kaffeerezepte/e_macchiato_recipe_img.jpg",
+      "title": "Qual o nome desta bebida?",
+      "answer": 3,
+      "alternatives": [
+        "Espresso",
+        "Cappuccino",
+        "Latte",
+        "Macchiatto"
+      ]
+    },
+    {
+      "image": "https://media1.giphy.com/media/zS3JwGkTc7KyGJFUzP/giphy.gif?cid=ecf05e47ctgcmgtfmej3h501vrxaln9ypi3o52j9qwb2w1nv&rid=giphy.gif",
+      "title": "Onde foi originado a bebiba 'Cold-brew'?",
+      "answer": 2,
+      "alternatives": [
+        "Brasil",
+        "Japão",
+        "Holanda",
+        "Coréia do Sul"
+      ]
+    },
+    {
+      "image": "https://media1.giphy.com/media/DrJm6F9poo4aA/giphy.gif?cid=ecf05e47g2p7pxjx4jt3uadeeea44eh4f2ovwqewg85jvx6n&rid=giphy.gif",
+      "title": "Qual é o país que mais consome café per capita no mundo?",
+      "answer": 3,
+      "alternatives": [
+        "Brasil",
+        "Noruega",
+        "Japão",
+        "Filândia"
+      ]
+    },
+    {
+      "image": "https://media3.giphy.com/media/EatCUT775FpC0/giphy.gif",
+      "title": "Qual o nome dado para o profissional especialista em preparar bebidas com café?",
+      "answer": 2,
+      "alternatives": [
+        "Bartender",
+        "Garçom",
+        "Barista",
+        "Copeiro"
+      ]
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1515588088170-833ff239af88?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80",
+      "title": "Qual o nome desta bebida?",
+      "answer": 1,
+      "alternatives": [
+        "Latte",
+        "Affogatto",
+        "Cappuccino",
+        "Ristretto"
+      ]
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1534516484460-0b6099615d5a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1866&q=80",
+      "title": "Qual o ano de invenção da empresa dona do método Melitta?",
+      "answer": 1,
+      "alternatives": [
+        "1910",
+        "1908",
+        "1925",
+        "1902"
+      ]
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1519532059956-a63a37af5deb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+      "title": "Qual o nome desta bebiba inventada na Espanha?",
+      "answer": 2,
+      "alternatives": [
+        "Latte",
+        "Coado",
+        "Cortado",
+        "Espresso"
+      ]
+    },
+    {
+      "image": "https://www.comunicaffe.com/wp-content/uploads/2016/03/magazzino-sacchi-caffe-export-caffe1-640x442.jpg",
+      "title": "Quem é o maior produtor de café no mundo?",
+      "answer": 3,
+      "alternatives": [
+        "Vietnã",
+        "Indonésia",
+        "Colômbia",
+        "Brasil"
       ]
     }
   ],
   "external": [
-    ""
+    "https://aluraquiz-css.omariosouto.vercel.app/",
+    "https://aluraquiz-devsoutinho.omariosouto.vercel.app/"
   ],
   "theme": {
     "colors": {
-      "primary": "#21557a",
-      "secondary": "#5481a9",
-      "mainBg": "#002c4e",
+      "primary": "#F89830",
+      "secondary": "#ED7A0E",
+      "mainBg": "#202020",
       "contrastText": "#FFFFFF",
       "wrong": "#FF5722",
       "success": "#4CAF50"
