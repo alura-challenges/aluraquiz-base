@@ -4,25 +4,63 @@
   "description": "Teste os seus conhecimentos sobre NextJS",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
-      "answer": 2,
+      "image": "https://cdn.auth0.com/blog/illustrations/nextjs.png",
+      "title": "Como criar uma Página no Next.js?",
+      "description": "",
+      "answer": 0,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Criar um componente React no diretório pages na raíz do projeto",
+        "Importar a biblioteca react-router-dom para aplicar aos componentes",
+        "A página pode ser criada em qualquer diretório, basta utilizar as bibliotecas necessárias",
+        "É necessário criar rotas com a biblioteca next/routes"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "image": "https://neilpatel.com/wp-content/uploads/2017/12/codigos-html-para-paginas-web.jpeg",
+      "title": "Qual é uma das principais features do Next.js?",
+      "description": "",
+      "answer": 2,
+      "alternatives": [
+         "Mudança de estado dos componentes a cada interação com eles",
+         "Geração de código HTML e CSS e o Browser ficar responsável pelo Javascript",
+         "A pré-renderização de cada página, retirando esse trabalho do client-side, melhorando a performance",
+         "Realização de testes automatizados"
+      ]
+    },
+    {
+      "image": "https://www.bccfalna.com/ebooks/wp-content/uploads/ebooks/2018/12/HTTP-Hyper-Text-Transfer-Protocol-for-Webpage-%E2%80%93-Request-and-Response-Core-JSP-in-Hindi.png",
+      "title": "Qual função utilizar quando se quer realizar a pré-renderização da página HTML em cada request ao servidor?",
+      "description": "",
       "answer": 0,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+         "getServerSideProps()",
+         "getStaticProps()",
+         "getInitialProps()",
+         "getStaticPaths()"
+      ]
+    },
+    {
+      "image": "https://miro.medium.com/max/650/1*Hva7hcsFWulFUPhrEWui1A.jpeg",
+      "title": "O que são rotas dinâmicas (dynamic routes)?",
+      "description": "",
+      "answer": 3,
+      "alternatives": [
+         "São rotas que possuem mudanças nos estados dos componentes",
+         "São rotas que são pré-renderizadas apenas através de cada request ao servidor",
+         "São rotas que são pré-renderizadas apenas no ambiente de build",
+         "São rotas criadas por meio de um identificador (id) e podem ser configuradas tanto para o ambiente de build quanto para cada request ao servidor"
+      ]
+    },
+    {
+      "image": "https://programathor.com.br/blog/wp-content/uploads/2018/08/o-que-%C3%A9-api.jpg",
+      "title": "Como construir API endpoints em um projeto next?",
+      "description": "",
+      "answer": 1,
+      "alternatives": [
+         "Não é possível criar com o Next, é preciso utilizar uma aplicação backend a parte",
+         "Criar um diretório ./pages/api e criar um arquivo que exporte uma função com os parâmetros de requisição e resposta",
+         "Criar um método setStaticProps() a fim de repassar como propriedades as informações para serem capturadas por componentes de outra aplicação",
+         "É necessário importar bibliotecas como o Express para se utilizar os métodos HTTP"
       ]
     }
   ],

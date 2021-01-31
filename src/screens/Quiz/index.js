@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useRouter } from 'next/router'
 
 import QuizBackground from "../../components/QuizBackground";
 import QuizContainer from "../../components/QuizContainer";
@@ -18,12 +19,17 @@ function LoadingWidget() {
 }
 
 function ResultWidget(props) {
+  const router = useRouter()
+  const { name } = router.query
   return (
     <Widget>
-      <Widget.Header>Tela de resultado</Widget.Header>
+      <Widget.Header>
+        <BackLinkArrow href='/' />
+        Tela de resultado
+      </Widget.Header>
 
       <Widget.Content>
-        <p>Você acertou {props.results.filter(x => x).length} questões</p>
+        <p>Parabéns <strong>{name}</strong>! Você acertou {props.results.filter(x => x).length} questões.</p>
         <ul>
           {props.results.map((result, resultIndex) => {
             const resultId = `result__${resultIndex}`
