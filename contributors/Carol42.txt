@@ -1,2 +1,2 @@
 Carol42
-cladoquiz.carol42.vercel.app
+https://cladoquiz.carol42.vercel.app/
