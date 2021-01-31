@@ -1,6 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 const InputBase = styled.input`
   width: 100%;
@@ -17,7 +17,12 @@ const InputBase = styled.input`
 export default function Input({ onChange, placeholder, ...props }) {
   return (
     <div>
-      <InputBase onChange={onChange} placeholder={placeholder} {...props} />
+      <InputBase
+        placeholder={placeholder}
+        onChange={onChange}
+        // eslint-disable-next-line react/jsx-props-no-spreading
+        {...props}
+      />
     </div>
   );
 }
@@ -30,5 +35,5 @@ Input.propTypes = {
   onChange: PropTypes.func.isRequired,
   placeholder: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
+  value: PropTypes.string,
 };
