@@ -13,4 +13,8 @@ export default function QuizDaGaleraPage() {
       />
     </ThemeProvider>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> a03b44936df60faea57fe006fef1654631e9bd65

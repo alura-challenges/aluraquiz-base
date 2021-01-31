@@ -1,2 +1,0 @@
-vitor-kb
-narutoquiz-base.vitor-kb.vercel.app/

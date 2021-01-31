@@ -1,2 +1,0 @@
-psatler
-https://quiz-nextjs.psatler.vercel.app/

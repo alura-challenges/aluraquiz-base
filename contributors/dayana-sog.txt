@@ -1,2 +1,0 @@
-dayana-sog
-imersao-react-next.dayana-sog.vercel.app/

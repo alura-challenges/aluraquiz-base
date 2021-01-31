@@ -6,7 +6,11 @@ import { useRouter } from 'next/router';
 import Link from '../src/components/Link';
 import db from '../db.json';
 import Widget from '../src/components/Widget';
+<<<<<<< HEAD
 
+=======
+import Link from '../src/components/Link';
+>>>>>>> a03b44936df60faea57fe006fef1654631e9bd65
 import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
@@ -42,15 +46,25 @@ export default function Home() {
     <QuizBackground backgroundImage={db.bg}>
       <Head>
         <title>
+<<<<<<< HEAD
          
           {db.title}
           </title>
         
+=======
+          AluraQuiz -
+          {db.title}
+        </title>
+>>>>>>> a03b44936df60faea57fe006fef1654631e9bd65
       </Head>
       <QuizContainer>
         <QuizLogo />
         <Widget
+<<<<<<< HEAD
         as={motion.section}
+=======
+          as={motion.section}
+>>>>>>> a03b44936df60faea57fe006fef1654631e9bd65
           transition={{ delay: 0, duration: 0.5 }}
           variants={{
             show: { opacity: 1, y: '0' },
@@ -87,7 +101,11 @@ export default function Home() {
             </form>
           </Widget.Content>
         </Widget>
+<<<<<<< HEAD
          
+=======
+
+>>>>>>> a03b44936df60faea57fe006fef1654631e9bd65
         <Widget
           as={motion.section}
           transition={{ delay: 0.5, duration: 0.5 }}
@@ -108,6 +126,17 @@ export default function Home() {
                   .replace('.vercel.app', '')
                   .split('.');
 
+<<<<<<< HEAD
+=======
+            <ul>
+              {db.external.map((linkExterno) => {
+                const [projectName, githubUser] = linkExterno
+                  .replace(/\//g, '')
+                  .replace('https:', '')
+                  .replace('.vercel.app', '')
+                  .split('.');
+
+>>>>>>> a03b44936df60faea57fe006fef1654631e9bd65
                 return (
                   <li key={linkExterno}>
                     <Widget.Topic
@@ -120,6 +149,7 @@ export default function Home() {
                 );
               })}
             </ul>
+<<<<<<< HEAD
             
           </Widget.Content>
         </Widget>
@@ -133,6 +163,20 @@ export default function Home() {
         initial="hidden"
         animate="show"
       />
+=======
+          </Widget.Content>
+        </Widget>
+        <Footer
+          as={motion.footer}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
+          initial="hidden"
+          animate="show"
+        />
+>>>>>>> a03b44936df60faea57fe006fef1654631e9bd65
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/romsishiyama" />
     </QuizBackground>
