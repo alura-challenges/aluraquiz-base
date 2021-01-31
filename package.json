@@ -9,7 +9,10 @@
     "lint": "eslint ./ --fix"
   },
   "dependencies": {
+    "@crello/react-lottie": "0.0.11",
+    "framer-motion": "^3.2.2-rc.1",
     "next": "latest",
+    "prop-types": "^15.7.2",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-is": "^16.8.0",

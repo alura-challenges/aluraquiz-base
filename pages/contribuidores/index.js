@@ -24,9 +24,9 @@ export const QuizContainer = styled.div`
 `;
 
 function Image({ src, indice }) {
-  const key = '191e83';
+  //const key = '191e83';
   const thumbnail = `
-https://api.screenshotmachine.com?key=${key}&url=${src}&dimension=1024x768&cacheLimit=2
+  https://gerador-de-imagens-omariosouto.alura-challenges.vercel.app/api/image-generator/?url=${src}
   `;
 
   return (
