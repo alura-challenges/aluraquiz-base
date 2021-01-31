@@ -1,5 +1,5 @@
-import { useEffect, useState, useRef } from 'react';
-import { useRouter } from 'next/router'
+import {  useState, useRef } from 'react';
+import BackLinkArrow from '../../components/BackLinkArrow';
 
 import Widget from '../../components/Widget'
 
@@ -8,7 +8,8 @@ export default function QuestionWidget({
   questionIndex,
   questionTotal,
   handleSubmit,
-  addResults
+  addResults,
+  pauseAudio
  }) {
   const btnRef = useRef();
 
@@ -22,6 +23,7 @@ export default function QuestionWidget({
   return (
     <Widget>
       <Widget.Header>
+        <BackLinkArrow href="/" />
         <h1>
           {`Pergunta ${questionIndex + 1} de ${questionTotal}`}
         </h1>

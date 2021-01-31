@@ -1,5 +1,6 @@
 import React, { useCallback, useState } from 'react';
 import Router from 'next/router';
+import Link from 'next/link';
 
 import db from '../db.json';
 import Widget from '../src/components/Widget';
@@ -41,6 +42,32 @@ export default function Home() {
             </form>
           </Widget.Content>
         </Widget>
+        <Widget>
+          <Widget.Content>
+            <h1>Quizes da Galera</h1>
+
+            <ul>
+              {db.external.map((linkExterno) => {
+                const [projectName, githubUser] = linkExterno
+                  .replace(/\//g, '')
+                  .replace('https:', '')
+                  .replace('.vercel.app', '')
+                  .split('.');
+
+                return (
+                  <Widget.Topic key={linkExterno} as="li" style={{background: 'transparent'}}>
+                    <Link
+                      href={linkExterno}
+                    >
+                      {`${githubUser}/${projectName}`}
+                    </Link>
+                  </Widget.Topic>
+                );
+              })}
+            </ul>
+          </Widget.Content>
+        </Widget>
+
         <Footer />
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/gabrielpdev" />

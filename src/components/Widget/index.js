@@ -113,6 +113,11 @@ Widget.Topic = styled.a`
   }
 
   cursor: pointer;
+
+  a{
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.contrastText};
+  }
 `;
 
 export default Widget;

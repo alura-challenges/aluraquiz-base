@@ -1,8 +1,4 @@
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router'
-
 import Widget from '../../components/Widget'
-import plant from '../../effects/plant.mp3';
 
 export default function LoadingWidget() {
 
