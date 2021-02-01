@@ -1,2 +1,6 @@
 ewerton-augusto
+<<<<<<< HEAD
 https://aluraquiz-inclusao-git-main.ewerton-augusto.vercel.app/
+=======
+aluraquiz-inclusao-git-main.ewerton-augusto.vercel.app/
+>>>>>>> 43f8b957199f4688cfa92159a6228a70917f808b
