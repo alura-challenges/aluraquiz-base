@@ -18,9 +18,7 @@ function ResultWidget({ results }) {
         Tela de resultado
       </Widget.Header>
 
-      <Widget.Content
-      
-      >
+      <Widget.Content>
         <p>
           Você acertou
           {' '}
