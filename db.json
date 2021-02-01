@@ -38,7 +38,7 @@
       "secondary": "#2A1E5C",
       "mainBg": "#171B35",
       "contrastText": "#fff",
-      "wrong": "#FF5722",
+      "wrong": "#ff0033",
       "success": "#4CAF50"
     },
     "borderRadius": "4px"
