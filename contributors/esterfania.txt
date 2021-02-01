@@ -1,2 +1,2 @@
 esterfania
-https://tsquiz.esterfania.vercel.app/
+https://tsquiz.vercel.app/
