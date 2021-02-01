@@ -1,2 +1,0 @@
-zlincon
-https://you-dont-know-js-quiz.vercel.app/

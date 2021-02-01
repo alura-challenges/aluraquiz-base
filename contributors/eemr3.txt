@@ -1,2 +1,0 @@
-eemr3
-https://bibliaquiz.eemr3.vercel.app/

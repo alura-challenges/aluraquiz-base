@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+
+=======
+>>>>>>> a03b44936df60faea57fe006fef1654631e9bd65
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from 'react';
@@ -33,6 +37,9 @@ export async function getServerSideProps(context) {
         throw new Error('Falha em pegar os dados');
       })
       .then((respostaConvertidaEmObjeto) => respostaConvertidaEmObjeto)
+      console.log(respostaConvertidaEmObjeto)
+      
+
       // .catch((err) => {
       //   // console.error(err);
       // });
@@ -47,4 +54,8 @@ export async function getServerSideProps(context) {
   } catch(err) {
     throw new Error(err);
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> a03b44936df60faea57fe006fef1654631e9bd65

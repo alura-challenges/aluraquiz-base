@@ -1,2 +1,0 @@
-BrenoHA
-https://quiz-react.brenoha.vercel.app/

@@ -21,7 +21,7 @@ function ResultWidget({ results }) {
 
       <Widget.Content>
         <p>
-          Você acertou
+          Você acertou!
           {' '}
           {/* {results.reduce((somatoriaAtual, resultAtual) => {
             const isAcerto = resultAtual === true;
@@ -42,7 +42,7 @@ function ResultWidget({ results }) {
               {' '}
               Resultado:
               {result === true
-                ? 'Acertou'
+                ? 'Acertou!'
                 : 'Errou'}
             </li>
           ))}

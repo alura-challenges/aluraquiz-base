@@ -1,2 +1,0 @@
-wbecher
-https://quiz-tricolor.wbecher.vercel.app/

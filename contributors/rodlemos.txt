@@ -1,2 +1,0 @@
-rodlemos
-https://alura-quiz-seasons.rodlemos.vercel.app/

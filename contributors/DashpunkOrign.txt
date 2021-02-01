@@ -1,2 +1,0 @@
-dashpunk
-https://quiz-pokemon.dashpunk.vercel.app/
