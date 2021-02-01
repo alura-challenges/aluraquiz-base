@@ -97,7 +97,9 @@
     }
   ],
   "external": [
-    ""
+    "https://quiz-react.brenoha.vercel.app/",
+    "https://pinkfloyd-quiz.denismend.vercel.app/",
+    "https://mastermindquiz.thiagodc1001.vercel.app/"
   ],
   "theme": {
     "colors": {

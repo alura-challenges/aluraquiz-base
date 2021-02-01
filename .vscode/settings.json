@@ -1,0 +1,4 @@
+{
+    "eslint.debug": true,
+    "eslint.format.enable": true
+}

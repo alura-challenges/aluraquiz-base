@@ -1,57 +1,69 @@
+/* eslint-disable react/prop-types */
 import React, { useState, useEffect } from 'react';
 // database
-import db from '../db.json';
+import db from '../../db.json';
 // styled components
-import Footer from '../src/components/Footer';
-import Widget from '../src/components/Widget';
-import Button from '../src/components/Button';
-import Loader from '../src/components/Loader';
-import QuizLogo from '../src/components/QuizLogo';
-import GitHubCorner from '../src/components/GitHubCorner';
-import QuizContainer from '../src/components/QuizContainer';
-import QuizBackground from '../src/components/QuizBackground';
-import AlternativForm from '../src/components/AlternativForm';
+import Footer from '../../src/components/Footer';
+import Widget from '../../src/components/Widget';
+import Button from '../../src/components/Button';
+import Loader from '../../src/components/Loader';
+import QuizLogo from '../../src/components/QuizLogo';
+import GitHubCorner from '../../src/components/GitHubCorner';
+import QuizContainer from '../../src/components/QuizContainer';
+import QuizBackground from '../../src/components/QuizBackground';
+import AlternativForm from '../../src/components/AlternativForm';
+import BackLinkArrow from '../../src/components/BackLinkArrow';
 
 const ResultWidget = ({ results }) => (
-  
+
   <Widget>
     <Widget.Header>
+      <BackLinkArrow href="/" />
       O SEU RESULTADO
     </Widget.Header>
 
     <Widget.Content>
       {/* [Desafio da Tela de Resultado] */}
-      {results.filter(x => x).length <= 4 &&
+      {(results.filter((x) => x).length) <= (results.filter((x) => x).length / 2)
+        && (
         <img
-        alt="bad-game"
-        style={{
-          width: '100%',
-          height: '150px',
-          objectFit: 'cover',
-        }}
-        src='https://longreadsblog.files.wordpress.com/2015/03/facepalm.gif'
+          alt="bad-game"
+          style={{
+            width: '100%',
+            height: '150px',
+            objectFit: 'cover',
+          }}
+          src="https://longreadsblog.files.wordpress.com/2015/03/facepalm.gif"
         />
-      }
-      {results.filter(x => x).length > 4 && 
+        )}
+      {(results.filter((x) => x).length) > (results.filter((x) => x).length / 2)
+        && (
         <img
-        alt="good-game"
-        style={{
-          width: '100%',
-          height: '150px',
-          objectFit: 'cover',
-        }}
-        src='https://i.pinimg.com/originals/f0/08/15/f00815c2e7b2e39cdf28ac0b2e1d516b.gif'
+          alt="good-game"
+          style={{
+            width: '100%',
+            height: '150px',
+            objectFit: 'cover',
+          }}
+          src="https://i.pinimg.com/originals/f0/08/15/f00815c2e7b2e39cdf28ac0b2e1d516b.gif"
         />
-      }
+        )}
       <p>
-        Você acertou {results.filter(x => x).length} perguntas.
+        Você acertou
+        {' '}
+        {results.filter((x) => x).length}
+        {' '}
+        perguntas de
+        {' '}
+        {results.length}
+        .
       </p>
       <p>
         No total de
         {' '}
         {results.reduce((actualSum, actualResult) => {
           const isCorrect = actualResult === true;
-          if(isCorrect) {
+          if (isCorrect) {
             return actualSum + 50;
           }
           return actualSum;
@@ -59,13 +71,6 @@ const ResultWidget = ({ results }) => (
         {' '}
         pontos.
       </p>
-      {/* <ul>
-        {results.map((result, i) => (
-          <li key={i}>
-            #0{i + 1} Resultado: {result === true ? 'Acertou' : 'Errou'}
-          </li>
-        ))}
-      </ul> */}
     </Widget.Content>
   </Widget>
 );
@@ -99,7 +104,7 @@ const QuestionWidget = ({
   return (
     <Widget>
       <Widget.Header>
-        {/* <BackLinkArrow href="/" /> */}
+        <BackLinkArrow href="/" />
         <h3>
           {' '}
           {`Enigma ${questionIndex + 1} de ${totalQuestions}`}
@@ -136,7 +141,6 @@ const QuestionWidget = ({
           }}
         >
           {question.alternatives.map((alt, altIndex) => {
-
             const altId = `alternative__${altIndex}`;
             const alternativeStatus = isCorrect ? 'SUCCESS' : 'ERROR';
             const isSelected = selectedAlternative === altIndex;
@@ -171,9 +175,6 @@ const QuestionWidget = ({
           >
             Confirmar
           </Button>
-          {/* <p>Alternativa selecionada: {selectedAlternative}</p>
-          {isQuestionSubmited && isCorrect && <p>Acertou!</p>}
-          {isQuestionSubmited && !isCorrect && <p>Errou!</p>} */}
         </AlternativForm>
       </Widget.Content>
     </Widget>
@@ -222,7 +223,7 @@ const QuizPage = () => {
       ...results,
       result,
     ]);
-  }
+  };
 
   return (
     <QuizBackground backgroundImage={db.bg}>
@@ -241,7 +242,7 @@ const QuizPage = () => {
           />
         )}
 
-        {screenState === screenStates.RESULT && <ResultWidget results={results}/>}
+        {screenState === screenStates.RESULT && <ResultWidget results={results} />}
 
         <Footer />
       </QuizContainer>

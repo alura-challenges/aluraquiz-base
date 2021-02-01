@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 // database
@@ -46,7 +47,7 @@ export default function Home() {
               />
 
               <Button type="submit" disabled={!name.length}>
-                {`Jogar ${name}`}
+                {`Vamos Jogar ${name}`}
               </Button>
             </form>
           </Widget.Content>
@@ -58,9 +59,27 @@ export default function Home() {
           </Widget.Header>
 
           <Widget.Content>
-            <Widget.Topic href="https://aluraquiz-wow.yuriramosc.vercel.app/"> WoW Quiz - @YuriRamosC</Widget.Topic>
+            <ul>
+              {db.external.map((linkExterno) => {
+                const [projectName, githubUser] = linkExterno
+                  .replace('https:', '')
+                  .replace(/\//g, '')
+                  .replace('.vercel.app', '')
+                  .split('.');
+                return (
+                  <li key={linkExterno}>
+                    <Widget.Topic
+                      href={`/quiz/${projectName}___${githubUser}`}
+                    >
+                      {`${projectName}/${githubUser}`}
+                    </Widget.Topic>
+                  </li>
+                );
+              })}
+            </ul>
+            {/* <Widget.Topic href="https://aluraquiz-wow.yuriramosc.vercel.app/"> WoW Quiz - @YuriRamosC</Widget.Topic>
             <Widget.Topic href="https://pinkfloyd-quiz.denismend.vercel.app/"> Pink Floyd Quiz - @denismend</Widget.Topic>
-            <Widget.Topic href="https://quiz.rafalmeida73.vercel.app/"> GoT Quiz - @rafalmeida73</Widget.Topic>
+            <Widget.Topic href="https://quiz.rafalmeida73.vercel.app/"> GoT Quiz - @rafalmeida73</Widget.Topic> */}
           </Widget.Content>
         </Widget>
         <Footer />
