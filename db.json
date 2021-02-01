@@ -98,7 +98,9 @@
       }
     ],
     "external": [
-      ""
+      "https://aluraquiz-base.alura-challenges.vercel.app/",
+      "https://tibiaquiz-base.lubrum.vercel.app/",
+      "https://poderosochefaoquiz.admsilva.vercel.app/"
     ],
     "theme": {
       "colors": {

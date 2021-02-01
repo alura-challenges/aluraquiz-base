@@ -1,21 +1,32 @@
 import React from 'react';
-import db from '../db.json';
-import QuizLogo from '../src/components/QuizLogo';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizContainer from '../src/components/QuizContainer';
-import Widget from '../src/components/Widget';
-import QuizImage from '../src/components/QuizImage';
-import AlternativesForm from '../src/components/AlternativesForm';
-import Button from '../src/components/Button';
-import Footer from '../src/components/Footer';
-import GitHubCorner from '../src/components/GitHubCorner';
+import db from '../../db.json';
+import QuizLogo from '../../src/components/QuizLogo';
+import QuizBackground from '../../src/components/QuizBackground';
+import QuizContainer from '../../src/components/QuizContainer';
+import Widget from '../../src/components/Widget';
+import QuizImage from '../../src/components/QuizImage';
+import BackLinkArrow from '../../src/components/BackLinkArrow';
+import AlternativesForm from '../../src/components/AlternativesForm';
+import Button from '../../src/components/Button';
+import Footer from '../../src/components/Footer';
+import GitHubCorner from '../../src/components/GitHubCorner';
+import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
+import Link from '../../src/components/Link';
 
 function LoadingWidget() {
     return (
-        <Widget>
+        <Widget
+            as={motion.section}
+            transition={{ delay: 0.1, duration: 0.1 }}
+            variants={{
+                show: { opacity: 1, y: '0' },
+                hidden: { opacity: 0, y: '40%' },
+            }}
+            initial="hidden"
+            animate="show">
             <Widget.Header>
-                Carregando dados - {db.title}
+                Carregando dados {db.title}
             </Widget.Header>
             <QuizImage src={'/loading.gif'} />
             <Widget.Content>
@@ -27,7 +38,16 @@ function LoadingWidget() {
 
 function ResultWidget({ results, nome }) {
     return (
-        <Widget>
+        <Widget
+            as={motion.section}
+            transition={{ delay: 0.7, duration: 0.7 }}
+            variants={{
+                show: { opacity: 1, y: '0' },
+                hidden: { opacity: 0, y: '100%' },
+            }}
+            initial="hidden"
+            animate="show"
+        >
             <Widget.Header>
                 <h1>{nome}</h1>
                 <p>Final de jogo. Parabéns pela participação!</p>
@@ -40,6 +60,9 @@ function ResultWidget({ results, nome }) {
                 <ul>
                     {results.map((result, i) => <li key={`result__${result}`}> {`#Pergunta ${i + 1}: ${result === true ? 'Acertou' : 'Errou'}`} </li>)}
                 </ul>
+                <Widget.Topic as={Link} href="/">
+                    Jogar Novamente
+                </Widget.Topic>
             </Widget.Content>
         </Widget>
     );
@@ -53,9 +76,18 @@ function QuestionWidget({ question, questionIndex, totalQuestions, name, onSubmi
     const isCorrect = selectedAlternative === question.answer;
 
     return (
-        <Widget>
+        <Widget
+            as={motion.section}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            variants={{
+                show: { opacity: 1, y: '0' },
+                hidden: { opacity: 0, y: '100%' },
+            }}
+            initial="hidden"
+            animate="show"
+        >
             <Widget.Header>
-                <h1>{`Pergunta ${questionIndex + 1} de ${totalQuestions}`}</h1>
+                <BackLinkArrow href="/" /> {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
             </Widget.Header>
             <QuizImage src={question.image} />
             <Widget.Content>
@@ -110,15 +142,19 @@ const screenStates = {
     RESULT: 'RESULT'
 };
 
-export default function QuizPage() {
+export default function QuizPage({database}) {
+    if(!database){
+        database = db;
+    }
+
     const router = useRouter();
     const { name } = router.query;
 
     const [results, setresults] = React.useState([]);
     const [screenState, setScreenState] = React.useState(screenStates.LOADING);
-    const totalQuestions = db.questions.length;
+    const totalQuestions = database.questions.length;
     const [questionIndex, setQuestionIndex] = React.useState(0);
-    const question = db.questions[questionIndex];
+    const question = database.questions[questionIndex];
 
     const addResult = (result) => {
         setresults([...results, result]);
@@ -134,7 +170,7 @@ export default function QuizPage() {
     }
 
     return (
-        <QuizBackground backgroundImage={db.bg}>
+        <QuizBackground backgroundImage={database.bg}>
             <QuizContainer>
                 <QuizLogo />
                 {screenState === screenStates.QUIZ && (
@@ -149,7 +185,14 @@ export default function QuizPage() {
                 )}
                 {screenState === screenStates.LOADING && <LoadingWidget />}
                 {screenState === screenStates.RESULT && <ResultWidget results={results} name={name} />}
-                <Footer />
+                <Footer as={motion.footer}
+                    transition={{ delay: 0.6, duration: 0.6 }}
+                    variants={{
+                        show: { opacity: 1, y: '0' },
+                        hidden: { opacity: 0, y: '100%' },
+                    }}
+                    initial="hidden"
+                    animate="show" />
             </QuizContainer>
             <GitHubCorner projectUrl="https://github.com/ewerton-augusto" />
         </QuizBackground>

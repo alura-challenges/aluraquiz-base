@@ -22,6 +22,14 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100vh;
   }
 
+  ul{
+    padding: 0;
+  }
+  
+  li { 
+    list-style-type:none; 
+  }
+
   #__next {
     flex: 1;
     display: flex;
