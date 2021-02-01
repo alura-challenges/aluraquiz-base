@@ -25,10 +25,9 @@ export const QuizContainer = styled.div`
 `;
 
 function Image({ src, indice }) {
-  const key = 'fe6311';
-  const [width, height] = [852, 480];
+//  const [width, height] = [852, 480];
   const thumbnail = `
-https://api.screenshotmachine.com?key=${key}&url=${src}&dimension=${width}x${height}
+https://gerador-de-imagens-omariosouto.alura-challenges.vercel.app/api/image-generator/?url=${src}
   `;
 
   return (
