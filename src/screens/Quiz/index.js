@@ -15,6 +15,7 @@ const ResultWidget = ({ results }) => (
 
   <Widget>
     <Widget.Header>
+      <BackLinkArrow href="/" />
       O SEU RESULTADO
     </Widget.Header>
 
