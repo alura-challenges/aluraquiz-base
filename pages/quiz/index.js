@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
 import db from '../../db.json';
 
 import Widget from '../../src/components/Widget';
@@ -9,7 +10,6 @@ import QuizBackground from '../../src/components/QuizBackground';
 import QuizContainer from '../../src/components/QuizContainer';
 import AlternativesForm from '../../src/components/AlternativesForm';
 import Button from '../../src/components/Button';
-import Home from '../index';
 
 function ResultWidget({ results }) {
   return (
@@ -59,7 +59,15 @@ function LoadingWidget() {
       </Widget.Header>
 
       <Widget.Content>
-        [Desafio do Loading]
+        <Player
+          autoplay
+          loop
+          src="https://assets10.lottiefiles.com/packages/lf20_ziicb44q.json"
+          style={{ height: '300px', width: '300px' }}
+          delay={2}
+        >
+          <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
+        </Player>
       </Widget.Content>
     </Widget>
   );
@@ -104,13 +112,13 @@ function QuestionWidget({
         <AlternativesForm
           onSubmit={(infosDoEvento) => {
             infosDoEvento.preventDefault();
-            setIsQuestionSubmited(false);
+            setIsQuestionSubmited(true);
             setTimeout(() => {
               addResult(isCorrect);
               onSubmit();
               setIsQuestionSubmited(false);
               setSelectedAlternative(undefined);
-            }, 3 * 100);
+            }, 3 * 500);
           }}
         >
           {question.alternatives.map((alternative, alternativeIndex) => {
@@ -143,8 +151,8 @@ function QuestionWidget({
           <Button type="submit" disabled={!hasAlternativeSelected}>
             Confirmar
           </Button>
-          {isQuestionSubmited && isCorrect && <p>Você acertou</p>}
-          {isQuestionSubmited && !isCorrect && <p>Você errou</p>}
+          {isQuestionSubmited && isCorrect}
+          {isQuestionSubmited && !isCorrect}
         </AlternativesForm>
       </Widget.Content>
     </Widget>
