@@ -29,18 +29,14 @@ function ResultWidget({ results }) {
           }, 0)} */}
                     {results.filter((x) => x).length} perguntas
                 </p>
-
                 <ul>
                     {results.map((result, index) => (
-                        <li key={`result__${result}`}>
+                        <li key={`result__${index}`}>
                             #{index + 1} Resultado:
                             {result === true ? 'Acertou' : 'Errou'}
                         </li>
                     ))}
                 </ul>
-                <p>
-                    <BackLinkArrow href="/"></BackLinkArrow>Voltar
-                </p>
             </Widget.Content>
         </Widget>
     )
