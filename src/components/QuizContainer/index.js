@@ -1,5 +1,3 @@
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import styled from 'styled-components';
 
 const QuizContainer = styled.div`

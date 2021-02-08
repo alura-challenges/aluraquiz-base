@@ -2,33 +2,123 @@
   "bg": "https://wallpapercave.com/wp/wp4086758.jpg",
   "title": "The PEANUTS Quiz",
   "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
-      "answer": 2,
+      "image": "https://www.peanuts.com/sites/default/files/cb-color.jpg",
+      "title": "Ele é um verdadeiro amigo, como sua amiga Peppermint Patty o apelidou?",
+      "description": "Em 2 de outubro de 1950 nasceu Peanuts com um improvável herói de cabeça redonda.",
+      "answer": 1,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Laranjão",
+        "Chuck",
+        "Charlie",
+        "Cabeça redonda"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
-      "answer": 0,
+      "image": "https://www.peanuts.com/sites/default/files/sc-color_1.jpg",
+      "title": "Schroeder toca piano desde antes de poder andar. Quem ele mais ama?",
+      "description": "Prodígio musical, Schroeder fica mais feliz na frente de seu piano (até que Lucy pede que ele toque canções de amor).",
+      "answer": 3,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+        "Beetoven",
+        "Lucy",
+        "Marcie",
+        "Beethoven"
+      ]
+    },
+    {
+      "image": "https://www.peanuts.com/sites/default/files/li-color.jpg",
+      "title": "Linus é a voz da razão entre seus colegas, mas porque ele carrega aquele cobertor azul?",
+      "description": "Todo Halloween, Linus pode ser encontrado no canteiro de abóboras, aguardando a chegada da Grande Abóbora.",
+      "answer": 1,
+      "alternatives": [
+        "Mania de criança",
+        "O epítome da segurança",
+        "Sente muito frio",
+        "Para chamar atenção"
+      ]
+    },
+    {
+      "image": "https://www.peanuts.com/sites/default/files/sn-color.jpg",
+      "title": "Snoopy é a grande estrela dessa turma, mas qual é a raça do nosso amiginho peludo?",
+      "description": "Como o autor mundialmente famoso, Snoopy está sempre tentando escrever o Grande Romance Americano.",
+      "answer": 2,
+      "alternatives": [
+        "beagol ",
+        "beegle ",
+        "beagle",
+        "Basset"
+      ]
+    },
+    {
+      "image": "https://www.peanuts.com/sites/default/files/sa-color.jpg",
+      "title": "Sally é curiosa e sempre pode pedir ajuda e encorajamento a seu irmão mais velho:",
+      "description": "Sally é dedicada a Linus, a quem ela carinhosamente chama de meu doce babboo.",
+      "answer": 3,
+      "alternatives": [
+        "Linus",
+        "Lucy",
+        "Schroeder",
+        "Charlie Brown"
+      ]
+    },
+    {
+      "image": "https://www.peanuts.com/sites/default/files/pp-color.jpg",
+      "title": "Qual é o verdadeiro nome da Peppermint Patty?",
+      "description": "Ela é uma atleta nata e gerente de seu próprio time de beisebol.",
+      "answer": 2,
+      "alternatives": [
+        "Patty Pimentinha",
+        "Peppermint Patty",
+        "Patricia Reichardt",
+        "Sally Brown"
+      ]
+    },
+    {
+      "image": "https://www.peanuts.com/sites/default/files/wo-color.jpg",
+      "title": "Woodstock foi batizado com esse nome por qual motivo?",
+      "description": "Ele nem sabe que tipo de pássaro ele é...",
+      "answer": 1,
+      "alternatives": [
+        "Feriando Nacional",
+        "Festival de Rock",
+        "Festival Revolucionario",
+        "Nome comum na liguam americana"
+      ]
+    },
+    {
+      "image": "https://www.peanuts.com/sites/default/files/lu-color.jpg",
+      "title": "Lucy é a Psiquiatra da turma, mas quanto ela cobra por consulta?",
+      "description": "se não fosse pela árvore comedora de pipas",
+      "answer": 2,
+      "alternatives": [
+        "1 Dollar",
+        "5 Centavos",
+        "1 Nickel",
+        "2 Reais"
+      ]
+    },
+    {
+      "image": "https://www.rbsdirect.com.br/imagesrc/27448647.jpg?w=700",
+      "title": "Qual o nome do criador quadrinhos Peanuts?",
+      "description": "Um improvável herói de cabeça redonda.",
+      "answer": 1,
+      "alternatives": [
+        "Charles M. Brown",
+        "Charles M. Schulz",
+        "Franklin M. Brown",
+        "Charles J.J. Reichardt"
       ]
     }
   ],
+  
   "external": [
-    ""
+    "https://aluraquiz-css.omariosouto.vercel.app/",
+    "https://aluraquiz-devsoutinho.omariosouto.vercel.app/"
   ],
+  
   "theme": {
     "colors": {
       "primary": "rgba(64, 60, 55, 0.5)",
@@ -37,7 +127,8 @@
       "gradientBg": "rgba(3, 115, 140, 1)",
       "contrastText": "#FFFFFF",
       "wrong": "#D93030",
-      "success": "#F2B705"
+      "success": "#038C2A",
+      "button": "#F2B705"
     },
     "borderRadius": "4px"
   }

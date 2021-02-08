@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import styled from 'styled-components';
 
 const Widget = styled.div`
@@ -27,7 +26,7 @@ const Widget = styled.div`
     align-items: center;
   }
   form div{
-    width 100%;
+    width: 100%;
   }
 `;
 

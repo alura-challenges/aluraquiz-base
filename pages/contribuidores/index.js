@@ -1,15 +1,16 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import fs from 'fs';
 import NextImage from 'next/image';
-import styled from 'styled-components'
+import styled from 'styled-components';
 import db from '../../db.json';
-import Widget from '../../src/components/Widget'
-import QuizLogo from '../../src/components/QuizLogo'
-import QuizBackground from '../../src/components/QuizBackground'
-import Footer from '../../src/components/Footer'
-import GitHubCorner from '../../src/components/GitHubCorner'
-  
-  
-  
+import Widget from '../../src/components/Widget';
+import QuizLogo from '../../src/components/QuizLogo';
+import QuizBackground from '../../src/components/QuizBackground';
+import Footer from '../../src/components/Footer';
+import GitHubCorner from '../../src/components/GitHubCorner';
+
 export const QuizContainer = styled.div`
   width: 100%;
   max-width: 350px;
@@ -28,7 +29,13 @@ https://api.screenshotmachine.com?key=${key}&url=${src}&dimension=1024x768&cache
   `;
 
   return (
-    <a href={src} style={{ display: 'inline-block', fontSize: '0' }}>
+    <a href={src} style={
+      {
+        display: 'inline-block';
+        fontSize: '0'
+      }
+    }>
+
       <img
         style={{ width: '100%', height: '250px', objectFit: 'cover' }}
         width="1024"

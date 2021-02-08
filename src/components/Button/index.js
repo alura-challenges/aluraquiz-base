@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
+
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -9,7 +9,7 @@ const Button = styled.button`
   padding: 2%;
   width: 100%;
   color: #ffffff;
-  background-color: ${({ theme }) => theme.colors.success};
+  background-color: ${({ theme }) => theme.colors.button};
   border: 1px solid ${({ theme }) => theme.colors.primary};
   border-radius: ${({ theme }) => theme.borderRadius};
   transition-duration: 0.4s;
@@ -26,7 +26,7 @@ const Button = styled.button`
 `;
 
 Button.propTypes = {
-  type:PropTypes.oneOf(['submit', 'type', 'button']),
+  type: PropTypes.oneOf(['submit', 'type', 'button']),
   childre: PropTypes.node.isRequired,
 };
 
