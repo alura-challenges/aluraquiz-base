@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
@@ -29,12 +30,7 @@ https://api.screenshotmachine.com?key=${key}&url=${src}&dimension=1024x768&cache
   `;
 
   return (
-    <a href={src} style={
-      {
-        display: 'inline-block';
-        fontSize: '0'
-      }
-    }>
+    <a href={src} style={{ display: 'inline-block', fontSize: '0' }}>
 
       <img
         style={{ width: '100%', height: '250px', objectFit: 'cover' }}
