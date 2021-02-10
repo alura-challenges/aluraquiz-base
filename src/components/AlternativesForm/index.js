@@ -1,26 +1,26 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const AlternativesForm = styled.form`
-  label {
-    &[data-selected="true"] {
-      background-color: ${({ theme }) => theme.colors.primary};
-      
-      &[data-status="SUCCESS"] {
-        background-color: ${({ theme }) => theme.colors.success};
-      }
+    label {
+        &[data-selected='true'] {
+            background-color: ${({ theme }) => theme.colors.primary};
+            border: 1px solid ${({ theme }) => theme.colors.mainBg};
+            &[data-status='SUCCESS'] {
+                background-color: ${({ theme }) => theme.colors.success};
+            }
 
-      &[data-status="ERROR"] {
-        background-color: ${({ theme }) => theme.colors.wrong};
-      }
+            &[data-status='ERROR'] {
+                background-color: ${({ theme }) => theme.colors.wrong};
+            }
+        }
+        &:focus {
+            opacity: 1;
+        }
     }
-    &:focus {
-      opacity: 1;
-    } 
-  }
 
-  button {
-    margin-top: 24px;
-  }
-`;
+    button {
+        margin-top: 24px;
+    }
+`
 
-export default AlternativesForm;
+export default AlternativesForm
