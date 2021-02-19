@@ -4,25 +4,96 @@
   "description": "Teste os seus conhecimentos sobre música pop",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
+      "image": "https://media.giphy.com/media/TKTwwH37JMN2g/giphy.gif",
+      "title": "Qual dessas músicas é da Britney Spears?",
       "description": "Essa é pra aquecer",
-      "answer": 2,
+      "answer": 1,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Sorry",
+        "Toxic",
+        "Genie in a bottle",
+        "Hung up"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "image": "https://media.giphy.com/media/2uI9sVKGGh3pNSos7B/giphy.gif",
+      "title": "Qual o nome do primeiro álbum da Madonna?",
+      "description": "Faz tempo ein haha",
       "answer": 0,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+         "Madonna",
+         "Like a Virgin",
+         "Holiday"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/zcWncFFkohH2MXkZyA/giphy.gif",
+      "title": "Qual a altura da Ariana Grande?",
+      "description": "rs",
+      "answer": 0,
+      "alternatives": [
+         "1,53",
+         "1,57",
+         "1,61",
+         "1,71"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/l1J9Forw8xWRvJNT2/giphy.gif",
+      "title": "Em qual dessas músicas Lady Gaga e Beyoncé cantam juntas",
+      "description": "<3",
+      "answer": 2,
+      "alternatives": [
+         "Eh eh",
+         "Dance in the dark",
+         "Telephone",
+         "Paparazzi"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/3ohuPor7N65OB20mOc/giphy.gif",
+      "title": "Quantos anos tem a Katy Perry?",
+      "description": "rs",
+      "answer": 3,
+      "alternatives": [
+         "29",
+         "30",
+         "40",
+         "36"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/knzOXtAcZXfGtV6FwX/giphy.gif",
+      "title": "Qual o nome do cantor The Weekend?",
+      "answer": 1,
+      "alternatives": [
+         "Michael",
+         "Abel",
+         "George",
+         "Joshua"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/l41lJkWz6eC2FpDuo/giphy.gif",
+      "title": "Qual cantor que subiu no palco do VMA pra dizer que Taylor Swift não merecia o prêmio?",
+      "description": "treta antiga",
+      "answer": 2,
+      "alternatives": [
+         "Jay Z",
+         "Chris Brown",
+         "Kanye West",
+         "Eminem"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/3o6ZtpHnM51FfEcrLO/giphy.gif",
+      "title": "Complete o hit de Taylor Swift: ”I knew you were…”?",
+      "answer": 3,
+      "alternatives": [
+         "Funny",
+         "Hot",
+         "Mary",
+         "Trouble"
       ]
     }
   ],
