@@ -17,5 +17,5 @@ jobs:
       with:
         comment_tag_name: CHANNEL_PROJECTS
         max_post_count: 999
-        feed_list: "https://github-feed-generator-theta.vercel.app/api/topic/aluraquiz/?v=7"
+        feed_list: "https://github-feed-generator-theta.vercel.app/api/topic/aluraquiz/?v=8"
         template: "$newline| [<img width='500px' src='https://opengraph.githubassets.com/cf9f1db04b6e4e2b7a984902d69b889f717d09cb94b8b4296ffffc16d0c73120/$title'/>]($url) | [<img width='500px' src='https://gerador-de-imagens-omariosouto-alura-challenges.vercel.app/api/image-generator?url=$url'/>]($url)"
