@@ -32,10 +32,11 @@ https://gerador-de-imagens-omariosouto.alura-challenges.vercel.app/api/image-gen
 
   return (
     <a href={src} style={{ display: 'inline-block', fontSize: '0' }}>
-      <img
+      <NextImage
         style={{ width: '100%', height: '250px', objectFit: 'cover' }}
-        // width={width}
-        // height={height}
+        width={width}
+        height={height}
+        unoptimized
         src={thumbnail}
       />
     </a>
